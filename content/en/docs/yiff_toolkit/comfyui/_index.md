@@ -72,7 +72,7 @@ This demonstrates pixel-space diffusion, just to give you an idea of what's happ
 
 To actually see the diffusion process in latent space, first we have to learn about latent space..
 
-##### Latent Space
+#### Latent Space
 
 it's important to understand that AI models don't work directly with regular images. Instead, they work with something called "latents" - a compressed representation of images that's more efficient for the AI to process.
 
@@ -92,10 +92,42 @@ Here is a video showing the forward diffusion process in latent space:
 
 > The [code](https://github.com/ka-de/cringe.live/blob/main/scripts/visualize_latent_diffusion.py) used to generate the video.
 
+The beauty of working with latents is that they're much more efficient:
+
+- Takes less memory (8x smaller than regular images)
+- Easier for the AI to manipulate
+- Contains the essential "structure" of images without unnecessary details
+
 The main differences you'll notice to pixel-space diffusion are:
 
 - The noise patterns will look more structured due to the VAE's learned latent space.
 - The degradation process might preserve more semantic information.
+
+ComfyUI provides a visual interface to interact with these mathematical processes through a node-based workflow, you'll encounter latents in three main ways:
+
+##### Empty Latent Image
+
+When you want to generate an image from scratch, referred to as text-to-image (t2i).
+
+- This is your starting point for pure text-to-image generation
+- Size: target image size. The node transparently outputs an 8x smaller grid than your target image (e.g., 512x512 image = 64x64 latents)
+- The actual latent content is zero latent pixels. Unlike the RGB zero, they don't map to black but a greyish color. Noise will be added at the start of the diffusion process (see [KSampler node](#The-KSampler-Node)).
+
+##### Load Image → VAE Encode
+
+When you want to modify an existing image, referred to as image-to-image (i2i).
+
+- Load Image: Brings your regular image into ComfyUI
+- VAE Encode: Converts it into latents.
+- This is your starting point for image-to-image generation
+
+##### VAE Decode → Save Image
+
+The final step in any workflow:
+
+   - Converts latents back into a regular image
+   - Like turning the blueprint back into a detailed painting
+   - This is how you get your final output image
 
 ##### The Mathematics
 
@@ -139,7 +171,9 @@ The equation describes a carefully controlled process of gradually corrupting an
 
 This mathematical foundation is crucial because it allows the model to learn the reverse process - taking a noisy image and progressively removing noise to generate the final output.
 
-##### Alpha Bar
+##### Alpha Bar and SNR
+
+<!--⚠️ FIXME: talk about SNR -->
 
 Alpha bar ($\bar{\alpha}$) is a crucial concept in diffusion models that represents the cumulative product of the signal scaling factors. Here's how it works:
 
@@ -163,7 +197,7 @@ where:
 
 - $x_t$ is the noisy image at time t
 - $x_0$ is the original image
-- $\epsilon$ is random Gaussian noise
+- $\epsilon ~ \mathcal{N}(0, I)$ is random Gaussian noise
 - $\sqrt{\bar{\alpha}_t}$ controls how much original signal remains
 - $\sqrt{1-\bar{\alpha}_t}$ controls how much noise is added
 
@@ -181,38 +215,7 @@ Something cool happens when the AI learns to reverse this process. It learns to:
 
 This is what happens every time you generate an image with Stable Diffusion or similar AI models. The model has learned to take random noise and progressively "denoise" it into a clear image that matches your prompt.
 
-#### Latents
-
-In ComfyUI, you'll encounter latents in three main ways:
-
-##### Empty Latent Image
-
-When you want to generate an image from scratch, referred to as text-to-image (t2i).
-
-- Creates a blank canvas of random noise in latent space
-- Size: 8x smaller than your target image (e.g., 512x512 image = 64x64 latents)
-- This is your starting point for pure text-to-image generation
-
-##### Load Image → VAE Encode
-
-When you want to modify an existing image, referred to as image-to-image (i2i).
-
-- Load Image: Brings your regular image into ComfyUI
-- VAE Encode: Converts it into latents.
-- This is your starting point for image-to-image generation
-
-1. **VAE Decode**: The final step in any workflow
-   - Converts latents back into a regular image
-   - Like turning the blueprint back into a detailed painting
-   - This is how you get your final output image
-
-The beauty of working with latents is that they're much more efficient:
-
-- Takes less memory (8x smaller than regular images)
-- Easier for the AI to manipulate
-- Contains the essential "structure" of images without unnecessary details
-
-**The KSampler Node**
+### The KSampler Node
 The `KSampler` node in ComfyUI implements the reverse diffusion process. It takes the noisy latent $x_T$ and progressively denoises it using the model's predictions. The node's parameters directly control this process:
 
 1. **Steps**: Controls the number of $t$ steps in the reverse process
@@ -362,11 +365,11 @@ Text-to-image generation involves conditioning the diffusion process on text emb
 
 $$p_\theta(x_{t-1}|x_t, \mathbf{c}) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t, \mathbf{c}), \Sigma_\theta(x_t, t, \mathbf{c}))$$
 
-where $\mathbf{c}$ represents the conditioning information. In the context of text-to-image generation, this conditioning vector typically comes from CLIP (Contrastive Language-Image Pre-training), a neural network developed by OpenAI that creates a shared embedding space for both text and images.
+Here, $\mu_\theta$ and $\Sigma_\theta$ are conditioned on both $x_t$ and $\mathbf{c}$, which represents the conditioning information. In the context of text-to-image generation, this conditioning vector typically comes from CLIP (Contrastive Language-Image Pre-training), a neural network developed by OpenAI that creates a shared embedding space for both text and images.
 
 #### Understanding CLIP and Conditioning
 
-CLIP (Contrastive Language-Image Pre-training) is a neural network trained to learn the relationship between images and text through contrastive learning. It consists of two encoders: one for text and one for images. During training, CLIP learns to maximize the cosine similarity between matching image-text pairs while minimizing it for non-matching pairs. This is achieved through a contrastive loss function operating on batches of N image-text pairs, creating an N×N similarity matrix.
+CLIP is a neural network trained to learn the relationship between images and text through contrastive learning. It consists of two encoders: one for text and one for images. During training, CLIP learns to maximize the cosine similarity between matching image-text pairs while minimizing it for non-matching pairs. This is achieved through a contrastive loss function operating on batches of N image-text pairs, creating an N×N similarity matrix.
 
 The text encoder first tokenizes the input text into a sequence of tokens, then processes these through a transformer to produce a sequence of token embeddings $\text{CLIP}_\text{text}(\text{text}) \rightarrow [\mathbf{z}_1, ..., \mathbf{z}_n] \in \mathbb{R}^{n \times d}$, where $n$ is the sequence length and $d$ is the embedding dimension. Unlike traditional transformer architectures that use pooling layers, CLIP simply takes the final token's embedding (corresponding to the [EOS] token) after layer normalization. The image encoder maps images to a similar high-dimensional representation $\text{CLIP}_\text{image}(\text{image}) \rightarrow \mathbf{z} \in \mathbb{R}^d$.
 
@@ -377,9 +380,7 @@ ComfyUI exposes this CLIP architecture through the `CLIPTextEncode` node. When y
 2. Processes tokens through the transformer layers
 3. Produces the conditioning vectors that guide the diffusion process
 
-The node comes in two variants that expose different levels of control over the embedding process:
-
-1. **Basic CLIPTextEncode**
+1. **CLIPTextEncode**
    - Implements the standard CLIP text encoding: $\text{CLIP}_\text{text}(\text{text})$
    - Single text input field for the entire prompt
    - Handles the full sequence of tokens as one unit
@@ -390,16 +391,28 @@ The node comes in two variants that expose different levels of control over the 
      negative prompt: "blurry, low quality, distorted"
      ```
 
-2. **CLIPTextEncode (Advanced)**
-   - Extends the basic encoding with token-level control
-   - Supports weight adjustment per token: (word:1.2)
-   - Mathematical operation on token embeddings:
-     $$z_\text{weighted} = \sum_i w_i \cdot z_i$$
-     where $w_i$ are the per-token weights
+2. **CLIPTextEncodeSD3**, **CLIPTextEncodeFlux**, **CLIPTextEncodeSDXL**
+    - Specialized CLIP nodes, as their name suggests, for different models.
+
+    While these are useful to some degree for FLUX, SD3 and above, for SDXL, since both CLIP-L and CLIP-G was trained with the same prompts, you will achieve better results by using the same prompt, therefore the regular `CLIPTextEncode` node is sufficient, and as shown on the screenshot below, for regional conditioning you can always use `Conditioning (Set Area)`, which will work with all of the CLIP nodes.
+
+    ![The rest of the CLIP Gang](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIPTextEncodeGang.png)
+
+    <!--WRITE ABOUT FLUX PROMPTING-->
+
+    <!--AT LEAST MENTION SD3 PROMPTING STUFF-->
 
 The sequence of token embeddings plays a crucial role in steering the diffusion process. Through cross-attention layers in the U-Net, the model can attend to different parts of the text representation as it generates the image. This mechanism enables the model to understand and incorporate multiple concepts and their relationships from the prompt.
 
 Consider what happens when you input a prompt like "a red cat sitting on a blue chair". The text is first split into tokens, and each token (or subword) gets its own embedding. The model can then attend differently to "red", "cat", "blue", and "chair" during different stages of the generation process, allowing it to properly place and render each concept in the final image.
+
+In most workflows, the CLIP starts right from `Load Checkpoint` and ends at `KSampler`:
+
+![CLIP's place in the workflow](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/basic_clip_example.png)
+
+But you can also load it separately from the checkpoint using either the `Load CLIP`, `DualCLIPLoader` or `TripleCLIPLoader` nodes as needed.
+
+![Various CLIP loaders in ComfyUI](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIP_Loaders.png)
 
 **Advanced CLIP Operations: The ConditioningCombine Node**
 To support complex prompting scenarios, ComfyUI provides the `ConditioningCombine` node that implements mathematical operations on conditioning vectors:
@@ -427,7 +440,7 @@ $$c_\text{combined} = \text{Combine}(z_\text{text}, z_\text{image})$$
 
 Beyond simple text conditioning, modern diffusion models support various forms of guidance. Image conditioning (img2img) allows existing images to influence the generation process. Control signals through ControlNet provide fine-grained control over structural elements. Style vectors extracted from reference images can guide aesthetic qualities, while structural guidance through depth maps or pose estimation can enforce specific spatial arrangements. Each of these conditioning methods can provide additional context to guide the generation process.
 
-### Unconditional vs Conditional Generation and CFG
+#### Unconditional vs Conditional Generation and CFG
 
 The diffusion model can actually generate images in two modes: unconditional, where no guidance is provided ($\mathbf{c} = \emptyset$), and conditional, where we use our CLIP embedding or other conditioning signals. Classifier-Free Guidance (CFG) leverages both of these modes to enhance the generation quality.
 
@@ -514,11 +527,7 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
    - Unrealistic results: Lower CFG, especially in early steps
    - Inconsistent style: Use CFG scheduling to balance
 
-## Introduction to ComfyUI
-
----
-
-ComfyUI provides a visual interface to interact with these mathematical processes through a node-based workflow. If
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Core Components
 
