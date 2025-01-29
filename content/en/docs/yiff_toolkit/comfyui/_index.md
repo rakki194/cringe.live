@@ -39,11 +39,74 @@ Additionally, you'll need FFmpeg installed on your system for the video conversi
 
 {{% /details %}}
 
+## ComfyUI's Structure
+
+```bash
+ComfyUI/
+├───.ci/                         # Continuous Integration configurations
+├───.github/                     # GitHub-specific files and workflows
+├───api_server/                  # REST API implementation
+│   ├───routes/                  # API endpoint definitions
+│   ├───services/                # API service implementations
+│   └───utils/                   # API utility functions
+├───app/                         # Core application code
+├───comfy/                       # Main ComfyUI backend implementation
+│   ├───cldm/                    # ControlNet implementations
+│   ├───ldm/                     # Latent Diffusion Model components
+│   ├───k_diffusion/             # K-diffusion sampling methods
+│   ├───text_encoders/           # Various text encoder implementations
+│   └───taesd/                   # Tiny AutoEncoder for Stable Diffusion
+├───comfy_execution/             # Workflow execution engine
+├───comfy_extras/                # Additional ComfyUI features
+├───custom_nodes/                # Community and custom node implementations
+│   ├───ComfyUI-Manager/         # Package and node manager
+│   ├───ComfyUI-Impact-Pack/     # Advanced node collection
+│   ├───ComfyUI-Inspire-Pack/    # Creative workflow nodes
+│   └───example.py               # A custom node in a separate python file under custom_nodes.
+├───input/                       # Input files directory
+├───models/                      # Model weights and files
+│   ├───checkpoints/             # Main Stable Diffusion model weights
+│   ├───clip/                    # CLIP text encoder models
+│   ├───clip_vision/             # CLIP vision models
+│   ├───configs/                 # Model configuration files
+│   ├───controlnet/              # ControlNet model weights
+│   ├───diffusers/               # HuggingFace Diffusers format models
+│   ├───embeddings/              # Textual Inversion embeddings
+│   ├───gligen/                  # GLIGEN grounded generation models
+│   ├───hypernetworks/           # Style modification networks
+│   ├───loras/                   # Low-rank adaptation models
+│   │   ├───sdxl/                # SDXL-compatible LoRAs
+│   │   ├───sd15/                # SD 1.5-compatible LoRAs
+│   │   ├───sd3/                 # SD 3-compatible LoRAs
+│   │   └───[others]/            # Other model-specific LoRAs
+│   ├───onnx/                    # ONNX optimized models
+│   ├───photomaker/              # PhotoMaker personalization models
+│   ├───sams/                    # Segment Anything Models
+│   ├───style_models/            # Style transfer models
+│   ├───text_encoders/           # Additional text encoders
+│   ├───unet/                    # U-Net model components
+│   ├───upscale_models/          # Super-resolution models
+│   ├───vae/                     # Variational AutoEncoder models
+│   └───vae_approx/              # Approximate VAE implementations
+├───notebooks/                   # Jupyter notebooks for development
+├───output/                      # Generated outputs directory
+├───script_examples/             # Example scripts and workflows
+├───temp/                        # Temporary file storage
+├───tests/                       # Testing infrastructure
+├───user/                        # User-specific configurations
+├───utils/                       # Utility functions and helpers
+└───web/                         # Frontend implementation
+    ├───assets/                  # Static assets and resources
+    ├───extensions/              # Web interface extensions
+    ├───scripts/                 # Frontend JavaScript code
+    └───templates/               # HTML templates
+```
+
 ## Understanding Diffusion Models
 
 ---
 
-Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. You can [skip](#latents) most, but not all of the intimidating equations, and jump to the practical part, but your brain *will* thank you for it!
+Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. You can [skip](#latents) most, but not all of the intimidating equations, and jump to the practical part, but your brain _will_ thank you for it!
 
 ### The Diffusion Process
 
@@ -125,9 +188,9 @@ When you want to modify an existing image, referred to as image-to-image (i2i).
 
 The final step in any workflow:
 
-   - Converts latents back into a regular image
-   - Like turning the blueprint back into a detailed painting
-   - This is how you get your final output image
+- Converts latents back into a regular image
+- Like turning the blueprint back into a detailed painting
+- This is how you get your final output image
 
 ##### The Mathematics
 
@@ -151,6 +214,7 @@ This is a visual demonstration of how noise is progressively added to an image i
 Let's break down each component of this equation:
 
 1. **Core Variables**
+
    - $x_t$ - The image state at the current timestep
    - $x_{t-1}$ - The image state at the previous timestep
    - $\beta_t$ - The noise schedule parameter that controls noise intensity
@@ -178,6 +242,7 @@ This mathematical foundation is crucial because it allows the model to learn the
 Alpha bar ($\bar{\alpha}$) is a crucial concept in diffusion models that represents the cumulative product of the signal scaling factors. Here's how it works:
 
 1. At each timestep $t$, we have:
+
    - $\beta_t$ (beta): the noise schedule parameter
    - $\alpha_t$ (alpha): $1 - \beta_t$, the signal scaling factor
 
@@ -216,29 +281,34 @@ Something cool happens when the AI learns to reverse this process. It learns to:
 This is what happens every time you generate an image with Stable Diffusion or similar AI models. The model has learned to take random noise and progressively "denoise" it into a clear image that matches your prompt.
 
 ### The KSampler Node
+
 The `KSampler` node in ComfyUI implements the reverse diffusion process. It takes the noisy latent $x_T$ and progressively denoises it using the model's predictions. The node's parameters directly control this process:
 
 1. **Steps**: Controls the number of $t$ steps in the reverse process
+
    - More steps = finer granularity but slower
    - Mathematically: divides $[0,T]$ into this many intervals
 
 2. **CFG Scale**: Implements Classifier-Free Guidance
    $$\epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, c) - \epsilon_\theta(x_t, t)]$$
+
    - Higher values follow the prompt more strictly
    - Lower values (1-4) allow more creative freedom
 
 3. **Scheduler**: Controls $\beta_t$ schedule
+
    - `Karras`: $\beta_t$ follows the schedule from [Karras et al.](https://arxiv.org/abs/2206.00364)
-   $$\sigma_i = \sigma_\text{min}^{1-f(i)} \sigma_\text{max}^{f(i)}$$
+     $$\sigma_i = \sigma_\text{min}^{1-f(i)} \sigma_\text{max}^{f(i)}$$
    - `Normal`: Linear schedule
-   $$\beta_t = \beta_\text{min} + t(\beta_\text{max} - \beta_\text{min})$$
+     $$\beta_t = \beta_\text{min} + t(\beta_\text{max} - \beta_\text{min})$$
 
 4. **Sampler**: Determines how to use model predictions
+
    - `Euler`: Simple first-order method
-   $$x_{t-1} = x_t - \eta \nabla \log p(x_t)$$
+     $$x_{t-1} = x_t - \eta \nabla \log p(x_t)$$
    - `DPM++ 2M`: Second-order method with momentum
-   $$v_t = \mu v_{t-1} + \epsilon_t$$
-   $$x_{t-1} = x_t + \eta v_t$$
+     $$v_t = \mu v_{t-1} + \epsilon_t$$
+     $$x_{t-1} = x_t + \eta v_t$$
 
 5. **Seed**: Controls the initial noise
    - Same seed + same parameters = reproducible results
@@ -307,6 +377,7 @@ This formulation offers several key advantages: it provides a more natural param
 ComfyUI implements v-prediction through several specialized samplers in the `KSampler` node:
 
 1. **DPM++ 2M Karras**
+
    - Most advanced v-prediction implementation
    - Uses momentum-based updates
    - Best for detailed, high-quality images
@@ -316,6 +387,7 @@ ComfyUI implements v-prediction through several specialized samplers in the `KSa
      - Scheduler: Karras
 
 2. **DPM++ SDE Karras**
+
    - Stochastic differential equation variant
    - Good balance of speed and quality
    - Recommended settings:
@@ -336,6 +408,7 @@ ComfyUI implements v-prediction through several specialized samplers in the `KSa
 For more control over the v-prediction process, you can use:
 
 1. **Advanced KSampler**
+
    - Exposes additional v-prediction parameters
    - Allows fine-tuning of the angle calculations
    - Parameters:
@@ -349,6 +422,7 @@ For more control over the v-prediction process, you can use:
 
 2. **Sampling Refinement**
    The velocity prediction can be refined using:
+
    - `VAEEncode` → `KSampler` → `VAEDecode` chain
    - Multiple sampling passes with decreasing step counts
    - Example workflow:
@@ -383,7 +457,8 @@ ComfyUI exposes this CLIP architecture through the `CLIPTextEncode` node. When y
 
 #### CLIPTextEncode
 
-- Implements the standard CLIP text encoding: $\text{CLIP}_\text{text}(\text{text})$
+Implements the standard CLIP text encoding $\text{CLIP}_\text{text}(\text{text})$ with a single text input field for the entire prompt. Depending on where you end up plugging it in either the `positive` or the `negative` input field of `KSampler`, `SamplerCustom` or , it will condition the diffusion process accordingly.
+
 - Single text input field for the entire prompt
 - Handles the full sequence of tokens as one unit
 - Example usage:
@@ -393,9 +468,71 @@ prompt: "a beautiful sunset over mountains, high quality"
 negative prompt: "blurry, low quality, distorted"
 ```
 
+### Prompt Weighting
+
+In CLIP-based text conditioning, you can modify the influence of specific terms using weight modifiers. The mathematical representation of weighted prompting can be expressed as:
+
+$$c_\text{weighted} = w \cdot c_\text{base}$$
+
+where $w$ is the weight multiplier and $c_\text{base}$ is the base conditioning vector.
+
+#### Syntax and Implementation
+
+ComfyUI supports the following weighting syntax out of the box:
+
+**Parentheses Method**
+
+- Format: `(text:weight)`
+- Example: `(beautiful sunset:1.2)`
+- Weights > 1 increase emphasis
+- Weights < 1 decrease emphasis
+
+The weighting affects how strongly the diffusion process considers certain concepts during generation. For instance:
+
+```json
+prompt: "a (red:1.3) cat on a (blue:.8) chair"
+```
+
+This prompt will emphasize the redness of the cat while subtly reducing the blue intensity of the chair.
+
+When you apply weights, the underlying CLIP embeddings are scaled according to:
+
+$$\text{CLIP}_\text{weighted}(\text{text}, w) = w \cdot \text{CLIP}_\text{text}(\text{text})$$
+
+This scaling affects the cross-attention layers in the U-Net, modifying how strongly different parts of the prompt influence the generation process. Multiple weighted terms combine through their effects on the overall conditioning vector:
+
+$$c_\text{final} = \sum_i w_i \cdot \text{CLIP}_\text{text}(\text{text}_i)$$
+
+#### Zero Weights
+
+When a weight of 0.0 is applied, the corresponding term's contribution to the conditioning vector becomes nullified:
+
+$$\text{CLIP}_\text{weighted}(\text{text}, 0) = \mathbf{0}$$
+
+However, this doesn't mean the term is simply ignored. Setting a weight to 0.0 can have unexpected effects because:
+
+1. The token still occupies a position in the sequence
+2. It may affect how surrounding terms are interpreted
+
+For this reason, it's generally better to omit terms you don't want rather than setting their weights to 0.0, however, neutralizing unwanted effects from multi-token trigger words is a valuable use case for them. Some words or phrases that get split into multiple tokens by CLIP's tokenizer can have unintended influences on generation. By using zero weights strategically, you can keep the trigger word's primary effect while nullifying its unwanted secondary effects.
+Example:
+
+```plaintext
+furry (sticker:0.0)
+```
+
+- 0.0: Complete nullification
+- 0.1 to 0.9: Reduced emphasis
+- 1.0: Default weight
+- 1.1 to 1.5: Moderate emphasis
+- 1.5 to 2.0: Strong emphasis
+- > 2.0: Very strong emphasis (use with caution)
+
+Depending on the model you are using, even 1.3 can be too strong and can also depend on the specific token in question. When writing prompts, try to use related terms to compliment the attention of the model before trying to use weights.
+
 #### CLIPTextEncodeSD3, CLIPTextEncodeFlux, CLIPTextEncodeSDXL
 
-- Specialized CLIP nodes, as their name suggests, for different models.
+Specialized CLIP nodes, as their name suggests, for different models.
 
 While these are useful to some degree for FLUX, SD3 and above, for SDXL, since both CLIP-L and CLIP-G was trained with the same prompts, you will achieve better results by using the same prompt, therefore the regular `CLIPTextEncode` node is sufficient, and as shown on the screenshot below, for regional conditioning you can always use `Conditioning (Set Area)`, which will work with all of the CLIP nodes.
 
@@ -417,11 +554,14 @@ But you can also load it separately from the checkpoint using either the `Load C
 
 ![Various CLIP loaders in ComfyUI](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIP_Loaders.png)
 
+![CLIP](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/ClipNodes.png)
+
 **Advanced CLIP Operations: The ConditioningCombine Node**
 To support complex prompting scenarios, ComfyUI provides the `ConditioningCombine` node that implements mathematical operations on conditioning vectors:
 
 1. **Concatenation Mode**
    $$c_\text{combined} = [c_1; c_2]$$
+
    - Preserves both conditions fully
    - Useful for regional prompting
 
@@ -458,12 +598,13 @@ $$\epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, \mat
 
 The guidance scale $w$ controls how strongly the conditioning influences the generation. A higher value of $w$ (typically 7-12) results in images that more closely match the prompt but may be less realistic, while lower values (1-4) produce more natural images that follow the prompt more loosely. When $w = 0$, we get purely unconditional generation, and as $w \to \infty$, the model becomes increasingly deterministic in following the conditioning.
 
-This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nodes. It directly controls this  weighting between unconditional and conditional predictions, allowing you to balance prompt adherence against image quality.
+This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nodes. It directly controls this weighting between unconditional and conditional predictions, allowing you to balance prompt adherence against image quality.
 
 #### Implementation in ComfyUI: CFG Control
 
 1. **Basic CFG Control**
    The `KSampler` node provides direct control over CFG through its parameters:
+
    - CFG Scale: The $w$ parameter in the equation
    - Recommended ranges:
 
@@ -477,6 +618,7 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
    ComfyUI offers several nodes for fine-tuning CFG behavior:
 
    a) **CFGScheduler Node**
+
    - Dynamically adjusts CFG during sampling
    - Mathematical operation:
      $$w_t = w_\text{start} + t(w_\text{end} - w_\text{start})$$
@@ -488,6 +630,7 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
      ```
 
    b) **CFGDenoiser Node**
+
    - Provides manual control over the denoising process
    - Allows separate CFG for different regions
    - Useful for:
@@ -530,7 +673,7 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
    - Unrealistic results: Lower CFG, especially in early steps
    - Inconsistent style: Use CFG scheduling to balance
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 ## Core Components
 
@@ -642,3 +785,4 @@ HUGO_SEARCH_EXCLUDE_START
 <!--
 HUGO_SEARCH_EXCLUDE_END
 -->
+```
