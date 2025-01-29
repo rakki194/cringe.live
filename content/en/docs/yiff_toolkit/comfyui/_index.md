@@ -373,40 +373,43 @@ CLIP is a neural network trained to learn the relationship between images and te
 
 The text encoder first tokenizes the input text into a sequence of tokens, then processes these through a transformer to produce a sequence of token embeddings $\text{CLIP}_\text{text}(\text{text}) \rightarrow [\mathbf{z}_1, ..., \mathbf{z}_n] \in \mathbb{R}^{n \times d}$, where $n$ is the sequence length and $d$ is the embedding dimension. Unlike traditional transformer architectures that use pooling layers, CLIP simply takes the final token's embedding (corresponding to the [EOS] token) after layer normalization. The image encoder maps images to a similar high-dimensional representation $\text{CLIP}_\text{image}(\text{image}) \rightarrow \mathbf{z} \in \mathbb{R}^d$.
 
-**Implementation in ComfyUI: The CLIPTextEncode Node**
+### Implementation in ComfyUI
+
 ComfyUI exposes this CLIP architecture through the `CLIPTextEncode` node. When you input a prompt, the node:
 
 1. Tokenizes your text into subwords using CLIP's tokenizer
 2. Processes tokens through the transformer layers
 3. Produces the conditioning vectors that guide the diffusion process
 
-1. **CLIPTextEncode**
-   - Implements the standard CLIP text encoding: $\text{CLIP}_\text{text}(\text{text})$
-   - Single text input field for the entire prompt
-   - Handles the full sequence of tokens as one unit
-   - Example usage:
+#### CLIPTextEncode
 
-     ```json
-     prompt: "a beautiful sunset over mountains, high quality"
-     negative prompt: "blurry, low quality, distorted"
-     ```
+- Implements the standard CLIP text encoding: $\text{CLIP}_\text{text}(\text{text})$
+- Single text input field for the entire prompt
+- Handles the full sequence of tokens as one unit
+- Example usage:
 
-2. **CLIPTextEncodeSD3**, **CLIPTextEncodeFlux**, **CLIPTextEncodeSDXL**
-    - Specialized CLIP nodes, as their name suggests, for different models.
+```json
+prompt: "a beautiful sunset over mountains, high quality"
+negative prompt: "blurry, low quality, distorted"
+```
 
-    While these are useful to some degree for FLUX, SD3 and above, for SDXL, since both CLIP-L and CLIP-G was trained with the same prompts, you will achieve better results by using the same prompt, therefore the regular `CLIPTextEncode` node is sufficient, and as shown on the screenshot below, for regional conditioning you can always use `Conditioning (Set Area)`, which will work with all of the CLIP nodes.
+#### CLIPTextEncodeSD3, CLIPTextEncodeFlux, CLIPTextEncodeSDXL
 
-    ![The rest of the CLIP Gang](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIPTextEncodeGang.png)
+- Specialized CLIP nodes, as their name suggests, for different models.
 
-    <!--WRITE ABOUT FLUX PROMPTING-->
+While these are useful to some degree for FLUX, SD3 and above, for SDXL, since both CLIP-L and CLIP-G was trained with the same prompts, you will achieve better results by using the same prompt, therefore the regular `CLIPTextEncode` node is sufficient, and as shown on the screenshot below, for regional conditioning you can always use `Conditioning (Set Area)`, which will work with all of the CLIP nodes.
 
-    <!--AT LEAST MENTION SD3 PROMPTING STUFF-->
+![The rest of the CLIP Gang](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIPTextEncodeGang.png)
+
+<!--WRITE ABOUT FLUX PROMPTING-->
+
+<!--AT LEAST MENTION SD3 PROMPTING STUFF-->
 
 The sequence of token embeddings plays a crucial role in steering the diffusion process. Through cross-attention layers in the U-Net, the model can attend to different parts of the text representation as it generates the image. This mechanism enables the model to understand and incorporate multiple concepts and their relationships from the prompt.
 
 Consider what happens when you input a prompt like "a red cat sitting on a blue chair". The text is first split into tokens, and each token (or subword) gets its own embedding. The model can then attend differently to "red", "cat", "blue", and "chair" during different stages of the generation process, allowing it to properly place and render each concept in the final image.
 
-In most workflows, the CLIP starts right from `Load Checkpoint` and ends at `KSampler`:
+In most workflows, interaction with CLIP starts right from `Load Checkpoint` and ends at `KSampler`:
 
 ![CLIP's place in the workflow](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/basic_clip_example.png)
 
