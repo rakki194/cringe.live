@@ -290,7 +290,10 @@ The `KSampler` node in ComfyUI implements the reverse diffusion process. It take
    - Mathematically: divides $[0,T]$ into this many intervals
 
 2. **CFG Scale**: Implements Classifier-Free Guidance
-   $$\epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, c) - \epsilon_\theta(x_t, t)]$$
+
+   $$
+   \epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, c) - \epsilon_\theta(x_t, t)]
+   $$
 
    - Higher values follow the prompt more strictly
    - Lower values (1-4) allow more creative freedom
@@ -298,17 +301,27 @@ The `KSampler` node in ComfyUI implements the reverse diffusion process. It take
 3. **Scheduler**: Controls $\beta_t$ schedule
 
    - `Karras`: $\beta_t$ follows the schedule from [Karras et al.](https://arxiv.org/abs/2206.00364)
-     $$\sigma_i = \sigma_\text{min}^{1-f(i)} \sigma_\text{max}^{f(i)}$$
+     $$
+     \sigma_i = \sigma_\text{min}^{1-f(i)} \sigma_\text{max}^{f(i)}
+     $$
    - `Normal`: Linear schedule
-     $$\beta_t = \beta_\text{min} + t(\beta_\text{max} - \beta_\text{min})$$
+     $$
+     \beta_t = \beta_\text{min} + t(\beta_\text{max} - \beta_\text{min})
+     $$
 
 4. **Sampler**: Determines how to use model predictions
 
    - `Euler`: Simple first-order method
-     $$x_{t-1} = x_t - \eta \nabla \log p(x_t)$$
+     $$
+     x_{t-1} = x_t - \eta \nabla \log p(x_t)
+     $$
    - `DPM++ 2M`: Second-order method with momentum
-     $$v_t = \mu v_{t-1} + \epsilon_t$$
-     $$x_{t-1} = x_t + \eta v_t$$
+     $$
+     v_t = \mu v_{t-1} + \epsilon_t
+     $$
+     $$
+     x_{t-1} = x_t + \eta v_t
+     $$
 
 5. **Seed**: Controls the initial noise
    - Same seed + same parameters = reproducible results
@@ -317,7 +330,9 @@ The `KSampler` node in ComfyUI implements the reverse diffusion process. It take
 **The Noise Node**
 The optional `Noise` node lets you directly manipulate the initial noise $x_T$. It implements:
 
-$$x_T = \mathcal{N}(0, I)$$
+$$
+x_T = \mathcal{N}(0, I)
+$$
 
 You can:
 
@@ -353,23 +368,33 @@ This calculates the angle $\phi_t$ that represents how far along we are in the d
 
 While the standard formulation predicts noise $\epsilon$, an alternative approach called v-prediction parameterizes the diffusion process in terms of velocity. In this formulation, we define an angle $\phi_t = \text{arctan}(\sigma_t/\alpha_t)$ that represents the progression through the diffusion process. For a variance-preserving process, we have:
 
-$$\alpha_\phi = \cos(\phi), \quad \sigma_\phi = \sin(\phi)$$
+$$
+\alpha_\phi = \cos(\phi), \quad \sigma_\phi = \sin(\phi)
+$$
 
 The noisy image at angle $\phi$ can then be expressed as:
 
-$$\mathbf{z}_\phi = \cos(\phi)\mathbf{x} + \sin(\phi)\epsilon$$
+$$
+\mathbf{z}_\phi = \cos(\phi)\mathbf{x} + \sin(\phi)\epsilon
+$$
 
 The key insight is to define a velocity vector:
 
-$$\mathbf{v}_\phi = \frac{d\mathbf{z}_\phi}{d\phi} = \cos(\phi)\epsilon - \sin(\phi)\mathbf{x}$$
+$$
+\mathbf{v}_\phi = \frac{d\mathbf{z}_\phi}{d\phi} = \cos(\phi)\epsilon - \sin(\phi)\mathbf{x}
+$$
 
 This velocity represents the direction of change in the noisy image as we move through the diffusion process. The model predicts this velocity instead of the noise:
 
-$$\hat{\mathbf{v}}_\theta(\mathbf{z}_\phi) = \cos(\phi)\hat{\epsilon}_\theta(\mathbf{z}_\phi) - \sin(\phi)\hat{\mathbf{x}}_\theta(\mathbf{z}_\phi)$$
+$$
+\hat{\mathbf{v}}_\theta(\mathbf{z}_\phi) = \cos(\phi)\hat{\epsilon}_\theta(\mathbf{z}_\phi) - \sin(\phi)\hat{\mathbf{x}}_\theta(\mathbf{z}_\phi)
+$$
 
 The sampling process then becomes a rotation in the $(\mathbf{z}_\phi, \mathbf{v}_\phi)$ plane:
 
-$$\mathbf{z}_{\phi_{t-\delta}} = \cos(\delta)\mathbf{z}_{\phi_t} - \sin(\delta)\hat{\mathbf{v}}_\theta(\mathbf{z}_{\phi_t})$$
+$$
+\mathbf{z}_{\phi_{t-\delta}} = \cos(\delta)\mathbf{z}_{\phi_t} - \sin(\delta)\hat{\mathbf{v}}_\theta(\mathbf{z}_{\phi_t})
+$$
 
 This formulation offers several key advantages: it provides a more natural parameterization of the diffusion trajectory, simplifies the sampling process into a straightforward rotation operation, and can potentially lead to improved sample quality in certain scenarios.
 
@@ -437,7 +462,9 @@ For more control over the v-prediction process, you can use:
 
 Text-to-image generation involves conditioning the diffusion process on text embeddings. The mathematical formulation becomes:
 
-$$p_\theta(x_{t-1}|x_t, \mathbf{c}) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t, \mathbf{c}), \Sigma_\theta(x_t, t, \mathbf{c}))$$
+$$
+p_\theta(x_{t-1}|x_t, \mathbf{c}) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t, \mathbf{c}), \Sigma_\theta(x_t, t, \mathbf{c}))
+$$
 
 Here, $\mu_\theta$ and $\Sigma_\theta$ are conditioned on both $x_t$ and $\mathbf{c}$, which represents the conditioning information. In the context of text-to-image generation, this conditioning vector typically comes from CLIP (Contrastive Language-Image Pre-training), a neural network developed by OpenAI that creates a shared embedding space for both text and images.
 
@@ -472,7 +499,9 @@ negative prompt: "blurry, low quality, distorted"
 
 In CLIP-based text conditioning, you can modify the influence of specific terms using weight modifiers. The mathematical representation of weighted prompting can be expressed as:
 
-$$c_\text{weighted} = w \cdot c_\text{base}$$
+$$
+c_\text{weighted} = w \cdot c_\text{base}
+$$
 
 where $w$ is the weight multiplier and $c_\text{base}$ is the base conditioning vector.
 
@@ -497,17 +526,23 @@ This prompt will emphasize the redness of the cat while subtly reducing the blue
 
 When you apply weights, the underlying CLIP embeddings are scaled according to:
 
-$$\text{CLIP}_\text{weighted}(\text{text}, w) = w \cdot \text{CLIP}_\text{text}(\text{text})$$
+$$
+\text{CLIP}_\text{weighted}(\text{text}, w) = w \cdot \text{CLIP}_\text{text}(\text{text})
+$$
 
 This scaling affects the cross-attention layers in the U-Net, modifying how strongly different parts of the prompt influence the generation process. Multiple weighted terms combine through their effects on the overall conditioning vector:
 
-$$c_\text{final} = \sum_i w_i \cdot \text{CLIP}_\text{text}(\text{text}_i)$$
+$$
+c_\text{final} = \sum_i w_i \cdot \text{CLIP}_\text{text}(\text{text}_i)
+$$
 
 #### Zero Weights
 
 When a weight of 0.0 is applied, the corresponding term's contribution to the conditioning vector becomes nullified:
 
-$$\text{CLIP}_\text{weighted}(\text{text}, 0) = \mathbf{0}$$
+$$
+\text{CLIP}_\text{weighted}(\text{text}, 0) = \mathbf{0}
+$$
 
 However, this doesn't mean the term is simply ignored. Setting a weight to 0.0 can have unexpected effects because:
 
@@ -560,26 +595,43 @@ But you can also load it separately from the checkpoint using either the `Load C
 To support complex prompting scenarios, ComfyUI provides the `ConditioningCombine` node that implements mathematical operations on conditioning vectors:
 
 1. **Concatenation Mode**
-   $$c_\text{combined} = [c_1; c_2]$$
+
+   $$
+   c_\text{combined} = [c_1; c_2]
+   $$
 
    - Preserves both conditions fully
    - Useful for regional prompting
 
 2. **Average Mode**
-   $$c_\text{combined} = \alpha c_1 + (1-\alpha) c_2$$
+
+   $$
+   c_\text{combined} = \alpha c_1 + (1-\alpha) c_2
+   $$
+
    - Blends multiple conditions
    - $\alpha$ controls the mixing ratio
 
 **Image-Based Conditioning: The CLIPVisionEncode Node**
 This node implements the image encoder part of CLIP:
 
-$$\text{CLIP}_\text{image}(\text{image}) \rightarrow \mathbf{z} \in \mathbb{R}^d$$
+$$
+\text{CLIP}_\text{image}(\text{image}) \rightarrow \mathbf{z} \in \mathbb{R}^d
+$$
 
 The complete pipeline for image-guided generation becomes:
 
-$$z_\text{image} = \text{CLIP}_\text{image}(\text{image})$$
-$$z_\text{text} = \text{CLIP}_\text{text}(\text{prompt})$$
-$$c_\text{combined} = \text{Combine}(z_\text{text}, z_\text{image})$$
+$$
+z_\text{image} = \text{CLIP}_\text{image}(\text{image})
+$$
+
+$$
+z_\text{text} = \text{CLIP}_\text{text}(\text{prompt})
+$$
+
+$$
+c_\text{combined} = \text{Combine}(z_\text{text}, z_\text{image})
+$$
 
 Beyond simple text conditioning, modern diffusion models support various forms of guidance. Image conditioning (img2img) allows existing images to influence the generation process. Control signals through ControlNet provide fine-grained control over structural elements. Style vectors extracted from reference images can guide aesthetic qualities, while structural guidance through depth maps or pose estimation can enforce specific spatial arrangements. Each of these conditioning methods can provide additional context to guide the generation process.
 
@@ -594,7 +646,9 @@ The CFG process works by predicting two denoising directions at each timestep:
 
 These predictions are then combined using a guidance scale $w$ (often called the CFG scale):
 
-$$\epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, \mathbf{c}) - \epsilon_\theta(x_t, t)]$$
+$$
+\epsilon_\text{CFG} = \epsilon_\theta(x_t, t) + w[\epsilon_\theta(x_t, t, \mathbf{c}) - \epsilon_\theta(x_t, t)]
+$$
 
 The guidance scale $w$ controls how strongly the conditioning influences the generation. A higher value of $w$ (typically 7-12) results in images that more closely match the prompt but may be less realistic, while lower values (1-4) produce more natural images that follow the prompt more loosely. When $w = 0$, we get purely unconditional generation, and as $w \to \infty$, the model becomes increasingly deterministic in following the conditioning.
 
@@ -691,7 +745,9 @@ Before starting with ComfyUI, you need to understand the different types of mode
    **The Load Checkpoint Node**
    The `Load Checkpoint` node in ComfyUI is your interface to the base diffusion model. It loads the model weights ($\theta$) and initializes the U-Net architecture that performs the reverse diffusion process. When you connect this node, you're essentially preparing the neural network that will implement:
 
-   $$p_\theta(x_{t-1}|x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))$$
+   $$
+   p_\theta(x_{t-1}|x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))
+   $$
 
    The node outputs three crucial components:
    - `MODEL`: The U-Net that predicts noise or velocity
@@ -713,7 +769,9 @@ Before starting with ComfyUI, you need to understand the different types of mode
    **The LoRA Loader Node**
    The `LoRA Loader` node implements the low-rank adaptation by modifying the base model's weights according to the equation:
 
-   $$W_{\text{final}} = W_0 + \alpha \cdot (BA)$$
+   $$
+   W_{\text{final}} = W_0 + \alpha \cdot (BA)
+   $$
 
    where $\alpha$ is the weight parameter in the node (typically 0.5-1.0). The node:
    - Takes a MODEL input from Load Checkpoint
