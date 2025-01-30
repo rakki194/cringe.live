@@ -9,7 +9,7 @@ aliases:
   - /docs/yiff_toolkit/comfyui
   - /en/docs/yiff_toolkit/comfyui/
   - /en/docs/yiff_toolkit/comfyui
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/confused_resize.jpg"
+image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/confused2_resized.jpg"
 image_alt: "The image depicts an anthropomorphic white wolf character adorned in a purple wizard's hat and robe, engrossed in reading a parchment. The setting appears to be a library or study, as evidenced by the shelves of books in the background. The wolf's expression conveys a sense of concentration or concern while examining the document. The scene is further enriched by a brick archway and a distant view of a medieval-style town with pointed towers and spires, enhancing the fantasy theme. This image skillfully combines elements of anthropomorphism and fantasy, creating a visually engaging scene that evokes curiosity about the character's role and the contents of the parchment."
 blurhash: "LoH^#C~UtOXA-p%LtQo#R.oyozWY"
 ---
@@ -113,7 +113,7 @@ ComfyUI/
 
 ---
 
-Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. You can [skip](#latent-space) most, but not all of the intimidating equations, and jump to the practical part, but your brain _will_ thank you for it!
+Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. If you disagree, you can scribble over all the equations on your monitor with a permanent marker!
 
 ### The Diffusion Process
 
@@ -263,13 +263,17 @@ where:
 
 This formulation proves to be particularly powerful for several key reasons. First, it enables us to directly sample any timestep from the original image $x_0$ without having to calculate all intermediate steps. Additionally, it provides precise visibility into the ratio between signal and noise at each point in the process. Finally, this formulation makes the reverse process mathematically tractable, which is essential for training the model to denoise images effectively.
 
-With a sufficently large dataset, we can estimate the variance of the distributions of images (or latents). The variance represents the average "signal's energy" in the images. When adding two independant signals together, their variance adds up under the gaussion assumption. This is important in the diffusion process, since the noise levels are also measured in terms of variance. After adding noise to the image, the Signal-to-Noise Ratio (SNR) is used to define how much useful signal is left over the noise background. This measure is independant of the total variance, thus any noising process can be remaped to a variance preserving process, meaning we add as much noise as we remove image energy. The dataset is often normalized to variance of 1 by removing the mean and dividing by the standard deviation.
+With a sufficiently large dataset, we can estimate the variance of the distributions of images (or latents). The variance represents the average "signal's energy" in the images. When adding two independent signals together, their variance adds up under the Gaussian assumption, often referred to in the context of Gaussian processes, which is a fundamental concept in probability theory and statistics. It assumes that a collection of random variables follows a multivariate normal distribution. This means that any finite subset of these variables will have a joint Gaussian distribution. The Gaussian assumption is named after Carl Friedrich Gauss, who introduced the Gaussian distribution, also known as the normal distribution. It allows for the modeling of complex, continuous phenomena using Gaussian processes. These processes are completely defined by their mean and covariance functions. The mean function represents the expected value of the process at any given point, while the covariance function describes how the values of the process at different points are related to each other. This assumption simplifies the analysis and computation of various statistical properties, making Gaussian processes a powerful tool for modeling and predicting real-world phenomena.
+
+Diffusion models, such as Denoising Diffusion Probabilistic Models (DDPM), rely on the assumption that the data distribution can be approximated by a Gaussian distribution at each step of the diffusion process. This assumption simplifies the mathematical formulation and allows for efficient sampling and generation of images. The Gaussian assumption ensures that the noise added at each step follows a normal distribution, making the process mathematically tractable and allowing for the use of well-established techniques in probability theory and statistics.
+
+This is important in the diffusion process, since the noise levels are also measured in terms of variance. After adding noise to the image, the Signal-to-Noise Ratio (SNR) is used to define how much useful signal is left over the noise background. This measure is independant of the total variance, thus any noising process can be remaped to a variance preserving process, meaning we add as much noise as we remove image energy. The dataset is often normalized to variance of 1 by removing the mean and dividing by the standard deviation.
 
 The process serves as the foundation for training our AI models. By understanding exactly how images are corrupted, we can teach the model to reverse this corruption during the generation process.
 
 #### Reverse Diffusion
 
-Something cool happens when the AI learns to reverse this process. It learns to:
+When the AI learns to reverse this process, it learns to:
 
 1. Start with pure noise
 2. Gradually remove the noise
@@ -463,9 +467,14 @@ For more control over the v-prediction process, you can use:
 
 ### Conditioning and Control
 
-<!-- TODO: Blurhash for images ~ -->
-
-![The image depicts a scene where five silhouetted figures with pointed ears are seated in front of a large screen. On the screen, there is a close-up of a white anthropomorphic wolf with green eyes and an open mouth, showing sharp teeth. The wolf appears to be speaking or making an expression, and the background of the screen is blue. The scene suggests that the silhouetted figures are watching or listening to the wolf on the screen, possibly in a setting reminiscent of a movie theater or a presentation. The contrast between the dark silhouettes and the brightly lit wolf on the screen creates a striking visual effect, making the image intriguing and engaging.](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/conditioning_and_control_resize.jpg)
+{{< blurhash
+src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/conditioning_and_control_resize.jpg"
+blurhash="LWAKUeof9ERk.Aj[IUR\*MvWC%Moe"
+width="1440"
+height="901"
+alt="The image depicts a scene where five silhouetted figures with pointed ears are seated in front of a large screen. On the screen, there is a close-up of a white anthropomorphic wolf with green eyes and an open mouth, showing sharp teeth. The wolf appears to be speaking or making an expression, and the background of the screen is blue. The scene suggests that the silhouetted figures are watching or listening to the wolf on the screen, possibly in a setting reminiscent of a movie theater or a presentation. The contrast between the dark silhouettes and the brightly lit wolf on the screen creates a striking visual effect, making the image intriguing and engaging."
+grid="false"
+>}}
 
 Text-to-image generation involves conditioning the diffusion process on text embeddings. The mathematical formulation becomes:
 
