@@ -194,7 +194,7 @@ The final step in any workflow:
 
 ##### The Mathematics
 
-The process of adding noise can be described mathematically with the following equation:
+The diffusion process can be mathematically described as the repeated addition of Gaussian noise over time step, as defined by the following equation:
 
 $$q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1}, \beta_tI)$$
 
@@ -228,7 +228,7 @@ Let's break down each component of this equation:
 
 The equation describes a carefully controlled process of gradually corrupting an image with noise. At each timestep:
 
-- The previous image is scaled down by $\sqrt{1-\beta_t}$, which decreases as more noise is added
+- The previous image is scaled down by $\sqrt{1-\beta_t}$, decreasing its energy as more noise is added
 - Random Gaussian noise with variance $\beta_tI$ is added to this scaled image
 - The process creates a smooth transition from the original image to pure noise
 - The noise schedule $\beta_t$ ensures this happens in a controlled, predictable way
@@ -236,8 +236,6 @@ The equation describes a carefully controlled process of gradually corrupting an
 This mathematical foundation is crucial because it allows the model to learn the reverse process - taking a noisy image and progressively removing noise to generate the final output.
 
 ##### Alpha Bar and SNR
-
-<!--⚠️ FIXME: talk about SNR -->
 
 Alpha bar ($\bar{\alpha}$) is a crucial concept in diffusion models that represents the cumulative product of the signal scaling factors. Here's how it works:
 
@@ -267,6 +265,8 @@ where:
 - $\sqrt{1-\bar{\alpha}_t}$ controls how much noise is added
 
 This formulation proves to be particularly powerful for several key reasons. First, it enables us to directly sample any timestep from the original image $x_0$ without having to calculate all intermediate steps. Additionally, it provides precise visibility into the ratio between signal and noise at each point in the process. Finally, this formulation makes the reverse process mathematically tractable, which is essential for training the model to denoise images effectively.
+
+With a sufficently large dataset, we can estimate the variance of the distributions of images (or latents). The variance represents the average "signal's energy" in the images. When adding two independant signals together, their variance adds up under the gaussion assumption. This is important in the diffusion process, since the noise levels are also measured in terms of variance. After adding noise to the image, the Signal-to-Noise Ratio (SNR) is used to define how much useful signal is left over the noise background. This measure is independant of the total variance, thus any noising process can be remaped to a variance preserving process, meaning we add as much noise as we remove image energy. The dataset is often normalized to variance of 1 by removing the mean and dividing by the standard deviation.
 
 The process serves as the foundation for training our AI models. By understanding exactly how images are corrupted, we can teach the model to reverse this corruption during the generation process.
 
@@ -342,7 +342,12 @@ You can:
 
 ### V-Prediction and Angular Parameterization
 
-The core of v-prediction is representing the diffusion process as a rotation in a 2D space.
+The concept of v-prediction in image diffusion models has evolved significantly over the years. Initially, diffusion models focused on noise prediction, where the model learned to predict the noise added to the data at each step of the diffusion process. This approach was popularized by the [Denoising Diffusion Probabilistic Models (DDPM) introduced by Ho et al. in 2020. The noise prediction method proved effective for generating high-quality images, but it had limitations in terms of stability and efficiency. To address these limitations, researchers explored alternative prediction methods, leading to the development of v-prediction. V-prediction involves predicting the velocity of the data as it evolves through the diffusion process, rather than the noise. This approach was introduced to improve the stability and accuracy of the diffusion models, particularly near the zero point of the time variable. By focusing on the velocity, v-prediction helps mitigate issues related to Lipschitz singularities, which can pose challenges during both training and inference.
+
+We can view an image or a latent as a single vector, composed of all the pixel values. Remember that diffusion processes can be remapped to a variance-preserving process, where the vectors for noise, image and intermediary steps are unit length. This means that we can represent the diffusion process as a rotation between the image and a gaussian noise vector. This happens in a high-dimensional space, but we are only interpolation between two directions (noise and image), so we can represent it in 2D coordinates.
+
+When viewing a latent or an image as a single vector For a variance preserving diffusion process,
+The core of v-prediction is representing the diffusion process as a rotation between the image and a pure noise vector. The intermediary noisy image are all on a circle
 
 The visualization below shows three key aspects of the v-prediction process: the noisy image progression (left), the raw velocity field in latent space (middle), and the decoded velocity field (right). The velocity field represents the direction and magnitude of change at each point, showing how the image should be denoised. The middle panel reveals the actual latent-space velocities at 1/8 resolution, while the right panel shows what these velocities "look like" when decoded back to image space. The overlay displays the current timestep ($t$), angle in radians ($\phi$), and cumulative signal scaling factor ($\bar{\alpha}$), helping us understand how the process evolves over time.
 
@@ -366,7 +371,7 @@ This calculates the angle $\phi_t$ that represents how far along we are in the d
 - At $phi_t = \pi/2$, we have pure noise
 - The angle smoothly interpolates between these states
 
-While the standard formulation predicts noise $\epsilon$, an alternative approach called v-prediction parameterizes the diffusion process in terms of velocity. In this formulation, we define an angle $\phi_t = \text{arctan}(\sigma_t/\alpha_t)$ that represents the progression through the diffusion process. For a variance-preserving process, we have:
+While the standard formulation predicts noise $\epsilon$, an alternative approach called v-prediction parameterizes the diffusion process in terms of velocity. In this formulation, we use an angle $\phi_t = \text{arctan}(\sigma_t/\alpha_t)$ to represent the progression through the diffusion process.
 
 $$
 \alpha_\phi = \cos(\phi), \quad \sigma_\phi = \sin(\phi)
@@ -384,6 +389,9 @@ $$
 \mathbf{v}_\phi = \frac{d\mathbf{z}_\phi}{d\phi} = \cos(\phi)\epsilon - \sin(\phi)\mathbf{x}
 $$
 
+Starting from a clean image, the diffusion process
+At the start of the diffusion process, the latent representation is heavily influenced by noise. In this stage the velocity vector $\mathbf{v}_\phi$ is primarily composed of noise ($\epsilon$), making it perpendicular to the image vector $\mathbf{x}$. This perpendicular relationship indicates that the velocity is introducing noise into the latent space, moving away from the clear image representation.
+
 This velocity represents the direction of change in the noisy image as we move through the diffusion process. The model predicts this velocity instead of the noise:
 
 $$
@@ -396,6 +404,7 @@ $$
 \mathbf{z}_{\phi_{t-\delta}} = \cos(\delta)\mathbf{z}_{\phi_t} - \sin(\delta)\hat{\mathbf{v}}_\theta(\mathbf{z}_{\phi_t})
 $$
 
+By learning to predict the velocity vectors ($\mathbf{v}_\phi$), the model ensures a stable and directed denoising path, where each velocity vector incrementally adjusts the latent representation towards the target image. As the process evolves, the alignment of velocity vectors with the image components showcases the structured denoising, gradually revealing the underlying image from the noisy latent.
 This formulation offers several key advantages: it provides a more natural parameterization of the diffusion trajectory, simplifies the sampling process into a straightforward rotation operation, and can potentially lead to improved sample quality in certain scenarios.
 
 **Implementation in ComfyUI: V-Prediction Samplers**
