@@ -39,6 +39,8 @@ Additionally, you'll need FFmpeg installed on your system for the video conversi
 
 {{% /details %}}
 
+<!--
+
 ## ComfyUI's Structure
 
 ```bash
@@ -101,6 +103,8 @@ ComfyUI/
     ├───scripts/                 # Frontend JavaScript code
     └───templates/               # HTML templates
 ```
+
+-->
 
 ## Understanding Diffusion Models
 
@@ -194,7 +198,7 @@ The final step in any workflow:
 
 ##### The Mathematics
 
-The diffusion process in DDIM is characterized by a Markov chain, where Gaussian noise is incrementally introduced over discrete time steps. This implies that the probability of the current state, $x_t$ is contingent solely on the preceeding state $x_{t-1}. Mathematically this transition is represented as:
+The diffusion process in DDIM is characterized by a Markov chain, where Gaussian noise is incrementally introduced over discrete time steps. This implies that the probability of the current state, $x_t$ is contingent solely on the preceeding state $x\_{t-1}. Mathematically this transition is represented as:
 
 $$
 q(x_t | x_{t-1}) := \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1}, \beta_t \mathbf{I})
@@ -203,8 +207,6 @@ $$
 Here, $q$ represents the diffusion transition, modeled as a normal distribution. Pixel values $x_t[i,j]$ are independently sampled with variance $\beta_t$ according to the noise schedule. The mean term, $\sqrt{1-\beta_t}x_{t-1}$, retains a scaled down, or faded version of the previous step, effectively diminishing its intensity as noise is progressively added, while $\beta_t \mathbf{I}$ ensures noise independence across pixels.
 
 By normalizing the dataset, we can crudely approximate sampling the initial image \( x_0 \sim \mathcal{D} \) as \( x_0 \sim \mathcal{N}(0, \mathbf{I}) \). Under this assumption, the variance of \( \sqrt{1-\beta_t} x_0 \) is \( 1-\beta_t \). Adding independent Gaussian noise with variance \( \beta_t \) then ensures the total variance remains 1 at each step.
-
-
 
 <!--
 
@@ -226,7 +228,6 @@ This is a visual demonstration of how noise is progressively added to an image i
 \end{aligned}
 
 -->
-
 
 ##### Alpha Bar and SNR
 
