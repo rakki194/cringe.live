@@ -9,6 +9,9 @@ aliases:
   - /docs/yiff_toolkit/comfyui
   - /en/docs/yiff_toolkit/comfyui/
   - /en/docs/yiff_toolkit/comfyui
+image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/confused_resize.jpg"
+image_alt: "The image depicts an anthropomorphic white wolf character adorned in a purple wizard's hat and robe, engrossed in reading a parchment. The setting appears to be a library or study, as evidenced by the shelves of books in the background. The wolf's expression conveys a sense of concentration or concern while examining the document. The scene is further enriched by a brick archway and a distant view of a medieval-style town with pointed towers and spires, enhancing the fantasy theme. This image skillfully combines elements of anthropomorphism and fantasy, creating a visually engaging scene that evokes curiosity about the character's role and the contents of the parchment."
+blurhash: "LoH^#C~UtOXA-p%LtQo#R.oyozWY"
 ---
 
 <!--markdownlint-disable MD025 MD033 MD038 -->
@@ -338,7 +341,7 @@ You can:
 
 The concept of v-prediction in image diffusion models has evolved significantly over the years. Initially, diffusion models focused on noise prediction, where the model learned to predict the noise added to the data at each step of the diffusion process. This approach was popularized by the [Denoising Diffusion Probabilistic Models (DDPM) introduced by Ho et al. in 2020](https://arxiv.org/abs/2006.11239). The noise prediction method proved effective for generating high-quality images, but it had limitations in terms of stability and efficiency. To address these limitations, researchers explored alternative prediction methods, leading to the development of v-prediction. V-prediction involves predicting the velocity of the data as it evolves through the diffusion process, rather than the noise. This approach was introduced to improve the stability and accuracy of the diffusion models, particularly near the zero point of the time variable. By focusing on the velocity, v-prediction helps mitigate issues related to Lipschitz singularities, which can pose challenges during both training and inference.
 
-We can view an image or a latent as a single vector, composed of all the pixel values. Remember that diffusion processes can be remapped to a variance-preserving process, where the vectors for noise, image and intermediary steps are unit length. This means that we can represent the diffusion process as a rotation between the image and a gaussian noise vector. This happens in a high-dimensional space, but we are only interpolation between two directions (noise and image), so we can represent it in 2D coordinates. The intermediary noised images are all on a circle, and the velocity vector is tangeant to that trajectory..
+We can view an image or a latent as a single vector, composed of all the pixel values. Remember that diffusion processes can be remapped to a variance-preserving process, where the vectors for noise, image and intermediary steps are unit length. This means that we can represent the diffusion process as a rotation between the image and a gaussian noise vector. This happens in a high-dimensional space, but we are only interpolating between two directions (noise and image), so we can represent it in 2D coordinates. The intermediary noised images are all on a circle, and the velocity vector is tangeant to that trajectory..
 
 The visualization below shows three key aspects of the v-prediction process: the noisy image progression (left), the raw velocity field in latent space (middle), and the decoded velocity field (right). The velocity field represents the direction and magnitude of change at each point, showing how the image should be denoised. The middle panel reveals the actual latent-space velocities at 1/8 resolution, while the right panel shows what these velocities "look like" when decoded back to image space. The overlay displays the current timestep ($t$), angle in radians ($\phi$), and cumulative signal scaling factor ($\bar{\alpha}$), helping us understand how the process evolves over time.
 
@@ -459,6 +462,10 @@ For more control over the v-prediction process, you can use:
      ```
 
 ### Conditioning and Control
+
+<!-- TODO: Blurhash for images ~ -->
+
+![The image depicts a scene where five silhouetted figures with pointed ears are seated in front of a large screen. On the screen, there is a close-up of a white anthropomorphic wolf with green eyes and an open mouth, showing sharp teeth. The wolf appears to be speaking or making an expression, and the background of the screen is blue. The scene suggests that the silhouetted figures are watching or listening to the wolf on the screen, possibly in a setting reminiscent of a movie theater or a presentation. The contrast between the dark silhouettes and the brightly lit wolf on the screen creates a striking visual effect, making the image intriguing and engaging.](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/conditioning_and_control_resize.jpg)
 
 Text-to-image generation involves conditioning the diffusion process on text embeddings. The mathematical formulation becomes:
 
