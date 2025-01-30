@@ -727,8 +727,6 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
    - Unrealistic results: Lower CFG, especially in early steps
    - Inconsistent style: Use CFG scheduling to balance
 
-```
-
 ## Core Components
 
 ---
@@ -738,6 +736,7 @@ This is why in ComfyUI, you'll often see a "CFG Scale" parameter in sampling nod
 Before starting with ComfyUI, you need to understand the different types of models:
 
 1. **Base Models (Checkpoints)**
+
    - Stored in `models\checkpoints`
    - Implement the full diffusion process: $p_\theta(x_{0:T})$
    - Examples: CompassMix XL Lightning, Pony Diffusion V6 XL
@@ -750,16 +749,19 @@ Before starting with ComfyUI, you need to understand the different types of mode
    $$
 
    The node outputs three crucial components:
+
    - `MODEL`: The U-Net that predicts noise or velocity
    - `CLIP`: The text encoder for conditioning
    - `VAE`: The encoder/decoder for image latents
 
    These outputs correspond to the three main mathematical operations in the diffusion process:
+
    1. MODEL: Implements $p_\theta(x_{t-1}|x_t)$
    2. CLIP: Provides conditioning $c$ for $p_\theta(x_{t-1}|x_t, c)$
    3. VAE: Handles the mapping between image space $x$ and latent space $z$
 
 2. **LoRAs (Low-Rank Adaptation)**
+
    - Stored in `models\loras`
    - Mathematically represented as: $W = W_0 + BA$ where:
      - $W_0$ is the original weight matrix
@@ -774,6 +776,7 @@ Before starting with ComfyUI, you need to understand the different types of mode
    $$
 
    where $\alpha$ is the weight parameter in the node (typically 0.5-1.0). The node:
+
    - Takes a MODEL input from Load Checkpoint
    - Applies the LoRA weights ($BA$) with scaling $\alpha$
    - Outputs the modified model
@@ -782,11 +785,11 @@ Before starting with ComfyUI, you need to understand the different types of mode
 
 3. **VAE (Variational Autoencoder)**
 
-    The VAE (Variational Autoencoder) is a type of neural network that learns to:
+   The VAE (Variational Autoencoder) is a type of neural network that learns to:
 
-    1. Encode images into a low-dimensional latent space representation using a neural encoder.
-    2. Decode these latent vectors back into images during generation.
-    3. Learn to generate new images by sampling from a lower-dimensional latent space for efficiency.
+   1. Encode images into a low-dimensional latent space representation using a neural encoder.
+   2. Decode these latent vectors back into images during generation.
+   3. Learn to generate new images by sampling from a lower-dimensional latent space for efficiency.
 
    - Stored in `models\vae`
    - Implements the encoding $q_\phi(z|x)$ and decoding $p_\psi(x|z)$
@@ -794,13 +797,19 @@ Before starting with ComfyUI, you need to understand the different types of mode
    **The VAE Encode/Decode Nodes**
    These nodes implement the probabilistic encoding and decoding:
 
-   $$z \sim q_\phi(z|x)$$
-   $$x \sim p_\psi(x|z)$$
+   $$
+   z \sim q_\phi(z|x)
+   $$
+
+   $$
+   x \sim p_\psi(x|z)
+   $$
 
    - `VAE Encode`: Converts images to latents (mean + variance)
    - `VAE Decode`: Converts latents back to images
 
    The latent space operations are crucial because:
+
    1. They reduce memory usage (latents are 4x smaller)
    2. They provide a more stable space for diffusion
    3. They help maintain semantic consistency
@@ -839,8 +848,9 @@ You can add nodes by either right-clicking or double-clicking on an empty area:
 <!--
 HUGO_SEARCH_EXCLUDE_START
 -->
+
 {{< related-posts related="docs/yiff_toolkit/lora_training/ | docs/yiff_toolkit/ | docs/yiff_toolkit/comfyui/Custom-ComfyUI-Workflow-with-the-Krita-AI-Plugin/" >}}
+
 <!--
 HUGO_SEARCH_EXCLUDE_END
 -->
-```
