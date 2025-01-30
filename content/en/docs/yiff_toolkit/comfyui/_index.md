@@ -106,7 +106,7 @@ ComfyUI/
 
 ---
 
-Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. You can [skip](#latents) most, but not all of the intimidating equations, and jump to the practical part, but your brain _will_ thank you for it!
+Before diving into ComfyUI's practical aspects, let's understand the mathematical foundations of diffusion models that power modern AI image generation. You can [skip](#latent-space) most, but not all of the intimidating equations, and jump to the practical part, but your brain _will_ thank you for it!
 
 ### The Diffusion Process
 
@@ -174,7 +174,7 @@ When you want to generate an image from scratch, referred to as text-to-image (t
 
 - This is your starting point for pure text-to-image generation
 - Size: target image size. The node transparently outputs an 8x smaller grid than your target image (e.g., 512x512 image = 64x64 latents)
-- The actual latent content is zero latent pixels. Unlike the RGB zero, they don't map to black but a greyish color. Noise will be added at the start of the diffusion process (see [KSampler node](#The-KSampler-Node)).
+- The actual latent content is zero latent pixels. Unlike the RGB zero, they don't map to black but a greyish color. Noise will be added at the start of the diffusion process (see [KSampler node](#the-ksampler-node)).
 
 ##### Load Image → VAE Encode
 
@@ -194,9 +194,17 @@ The final step in any workflow:
 
 ##### The Mathematics
 
-The diffusion process can be mathematically described as the repeated addition of Gaussian noise over time step, as defined by the following equation:
+The diffusion process in DDIM is characterized by a Markov chain, where Gaussian noise is incrementally introduced over discrete time steps. This implies that the probability of the current state, $x_t$ is contingent solely on the preceeding state $x_{t-1}. Mathematically this transition is represented as:
 
-$$q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1}, \beta_tI)$$
+$$
+q(x_t | x_{t-1}) := \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1}, \beta_t \mathbf{I})
+$$
+
+Here, $q$ represents the diffusion transition, modeled as a normal distribution. Pixel values $x_t[i,j]$ are independently sampled with variance $\beta_t$ according to the noise schedule. The mean term, $\sqrt{1-\beta_t}x_{t-1}$, retains a scaled down, or faded version of the previous step, effectively diminishing its intensity as noise is progressively added, while $\beta_t \mathbf{I}$ ensures noise independence across pixels.
+
+By normalizing the dataset, we can crudely approximate sampling the initial image \( x_0 \sim \mathcal{D} \) as \( x_0 \sim \mathcal{N}(0, \mathbf{I}) \). Under this assumption, the variance of \( \sqrt{1-\beta_t} x_0 \) is \( 1-\beta_t \). Adding independent Gaussian noise with variance \( \beta_t \) then ensures the total variance remains 1 at each step.
+
+
 
 <!--
 
@@ -209,31 +217,16 @@ $$q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1}, \beta_tI)$$
 
 This is a visual demonstration of how noise is progressively added to an image in the diffusion process, in pixel-space, showing four key components side by side: the original image at each timestep ($x_{t-1}$), the scaled-down version of that image ($\sqrt{1-\beta_t}x_{t-1}$), the random Gaussian noise being added ($\mathcal{N}(0, \beta_tI)$), and the resulting noisy image ($x_t$). The visualization includes the mathematical equation at the bottom, updating in real-time to show how the scaling factor ($\sqrt{1-\beta_t}$) decreases while the noise intensity ($\beta_t$) increases over time, making it clear how the image gradually transitions from its original state to becoming increasingly noisy.
 
+\begin{aligned}
+    x_t &= \sqrt{1-\beta_t}x_{t-1} + \sqrt{\beta_t} \mathcal{N}(x_t; 0, I) \\
+    \mathbb{E}[x_t] &= \sqrt{1-\beta_t} \mathbb{E}[x_{t-1}] + \sqrt{\beta_t} \mathbb{E}[\mathcal{N}(x_t; 0, I)] \\
+    &= \sqrt{1-\beta_t} \mathbb{E}[x_{t-1}] \\
+    \text{Var}(x_t) &= (1-\beta_t) \text{Var}(x_{t-1}) + \beta_t \text{Var}(\mathcal{N}(x_t; 0, I)) \\
+    &= (1-\beta_t) \text{Var}(x_{t-1}) + \beta_t I
+\end{aligned}
+
 -->
 
-Let's break down each component of this equation:
-
-1. **Core Variables**
-
-   - $x_t$ - The image state at the current timestep
-   - $x_{t-1}$ - The image state at the previous timestep
-   - $\beta_t$ - The noise schedule parameter that controls noise intensity
-   - $I$ - The identity matrix (ensures noise is applied uniformly)
-
-2. **Distribution Components**
-   - $q(x_t|x_{t-1})$ - The probability distribution of the current state given the previous state
-   - $\mathcal{N}$ - Denotes a normal (Gaussian) distribution
-   - $\sqrt{1-\beta_t}x_{t-1}$ - The mean of the distribution
-   - $\beta_tI$ - The variance of the distribution
-
-The equation describes a carefully controlled process of gradually corrupting an image with noise. At each timestep:
-
-- The previous image is scaled down by $\sqrt{1-\beta_t}$, decreasing its energy as more noise is added
-- Random Gaussian noise with variance $\beta_tI$ is added to this scaled image
-- The process creates a smooth transition from the original image to pure noise
-- The noise schedule $\beta_t$ ensures this happens in a controlled, predictable way
-
-This mathematical foundation is crucial because it allows the model to learn the reverse process - taking a noisy image and progressively removing noise to generate the final output.
 
 ##### Alpha Bar and SNR
 
@@ -342,12 +335,9 @@ You can:
 
 ### V-Prediction and Angular Parameterization
 
-The concept of v-prediction in image diffusion models has evolved significantly over the years. Initially, diffusion models focused on noise prediction, where the model learned to predict the noise added to the data at each step of the diffusion process. This approach was popularized by the [Denoising Diffusion Probabilistic Models (DDPM) introduced by Ho et al. in 2020. The noise prediction method proved effective for generating high-quality images, but it had limitations in terms of stability and efficiency. To address these limitations, researchers explored alternative prediction methods, leading to the development of v-prediction. V-prediction involves predicting the velocity of the data as it evolves through the diffusion process, rather than the noise. This approach was introduced to improve the stability and accuracy of the diffusion models, particularly near the zero point of the time variable. By focusing on the velocity, v-prediction helps mitigate issues related to Lipschitz singularities, which can pose challenges during both training and inference.
+The concept of v-prediction in image diffusion models has evolved significantly over the years. Initially, diffusion models focused on noise prediction, where the model learned to predict the noise added to the data at each step of the diffusion process. This approach was popularized by the [Denoising Diffusion Probabilistic Models (DDPM) introduced by Ho et al. in 2020](https://arxiv.org/abs/2006.11239). The noise prediction method proved effective for generating high-quality images, but it had limitations in terms of stability and efficiency. To address these limitations, researchers explored alternative prediction methods, leading to the development of v-prediction. V-prediction involves predicting the velocity of the data as it evolves through the diffusion process, rather than the noise. This approach was introduced to improve the stability and accuracy of the diffusion models, particularly near the zero point of the time variable. By focusing on the velocity, v-prediction helps mitigate issues related to Lipschitz singularities, which can pose challenges during both training and inference.
 
-We can view an image or a latent as a single vector, composed of all the pixel values. Remember that diffusion processes can be remapped to a variance-preserving process, where the vectors for noise, image and intermediary steps are unit length. This means that we can represent the diffusion process as a rotation between the image and a gaussian noise vector. This happens in a high-dimensional space, but we are only interpolation between two directions (noise and image), so we can represent it in 2D coordinates.
-
-When viewing a latent or an image as a single vector For a variance preserving diffusion process,
-The core of v-prediction is representing the diffusion process as a rotation between the image and a pure noise vector. The intermediary noisy image are all on a circle
+We can view an image or a latent as a single vector, composed of all the pixel values. Remember that diffusion processes can be remapped to a variance-preserving process, where the vectors for noise, image and intermediary steps are unit length. This means that we can represent the diffusion process as a rotation between the image and a gaussian noise vector. This happens in a high-dimensional space, but we are only interpolation between two directions (noise and image), so we can represent it in 2D coordinates. The intermediary noised images are all on a circle, and the velocity vector is tangeant to that trajectory..
 
 The visualization below shows three key aspects of the v-prediction process: the noisy image progression (left), the raw velocity field in latent space (middle), and the decoded velocity field (right). The velocity field represents the direction and magnitude of change at each point, showing how the image should be denoised. The middle panel reveals the actual latent-space velocities at 1/8 resolution, while the right panel shows what these velocities "look like" when decoded back to image space. The overlay displays the current timestep ($t$), angle in radians ($\phi$), and cumulative signal scaling factor ($\bar{\alpha}$), helping us understand how the process evolves over time.
 
@@ -518,7 +508,7 @@ where $w$ is the weight multiplier and $c_\text{base}$ is the base conditioning 
 
 ComfyUI supports the following weighting syntax out of the box:
 
-**Parentheses Method**
+##### Parentheses Method
 
 - Format: `(text:weight)`
 - Example: `(beautiful sunset:1.2)`
