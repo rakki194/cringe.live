@@ -1,6 +1,6 @@
 # [CRINGE.LIVE](https://cringe.live)
 
-A multilingual documentation hub focused on AI image generation, specializing in LoRA training and furry art generation tools. The site provides comprehensive guides, tools, and resources for creating and optimizing AI-generated artwork.
+A multilingual documentation hub focused on large language models, AI image generation, specializing in LoRA training and furry art generation tools. The site provides comprehensive guides, tools, and resources for creating and optimizing AI-generated artwork.
 
 ## 🌟 Key Features
 
@@ -16,7 +16,7 @@ A multilingual documentation hub focused on AI image generation, specializing in
 
 - **Framework**: Hugo static site generator
 - **Theme**: Custom `cringe-theme`
-- **Frontend**: 
+- **Frontend**:
   - JavaScript for interactive features
   - BlurHash for optimized image loading
   - Markdown-based content structure
@@ -39,9 +39,8 @@ A multilingual documentation hub focused on AI image generation, specializing in
   - Custom nodes
   - Performance optimization
   - Workflow guides
-- **Windows Tools**
-  - Setup guides
-  - Optimization tips
+- **LLMs**
+  - Inference and training guides on creating your perfect synthetic tool-calling husband.
 - **User Scripts**
   - Browser extensions
   - Automation tools
@@ -79,7 +78,7 @@ The website includes various tools and guides for dataset management:
 
 All documentation and code are available for reference and learning. LoRA models and resources are free to use but not for commercial purposes or redistribution on image generation services.
 
-## 📧 Deployment
+## ⬆️ Deployment
 
 The site is automatically deployed to [cringe.live](https://cringe.live) through GitHub Pages. Updates are managed through version control and continuous integration.
 

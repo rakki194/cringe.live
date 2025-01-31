@@ -140,7 +140,7 @@ The forward diffusion process systematically transforms a clear image into pure 
 
 This demonstrates pixel-space diffusion, just to give you an idea of what's happening.
 
-To actually see the diffusion process in latent space, first we have to learn about latent space..
+To actually see the diffusion process in latent space, first we have to learn about latent space.
 
 #### Latent Space
 
@@ -150,6 +150,42 @@ Think of them like a blueprint of an image:
 
 - A regular image stores exact colors for each pixel (like a detailed painting)
 - A latent stores abstract patterns and features (like an architect's blueprint)
+
+Mathematically, the process of converting an image into latent is defined as:
+
+$$
+z = \text{VAE}_\text{enc}(x)
+$$
+
+Where $x$ is the original image, and $z$ is the corresponding latent representation. This is typically a lower-dimensional tensor with learned feature mappings that retain the essential structure of the image.
+
+The decoder function is then used to reconstruct the image:
+
+$$
+\hat{x} = \text{VAE}_\text{dec}(z)
+$$
+
+Where $\hat{x}$ is the reconstructed image. Ideally $\hat{x}$ should closely resemble $x$, but due to the compression processs, some high-frequency details may be lost.
+
+Variational Autoencoders (VAEs) introduce an additional probabilistic constraint by encoding images into a latent distribution rather than a fixed latent vector. Instead of directly mapping an image to a latent vector $z$, the encoder outputs two components:
+
+$$
+\mu = f_\text{enc}(x), \quad \sigma = g_\text{enc}(x)
+$$
+
+Where $\mu$ represents the mean and $\sigma$ represents the standard deviation of the latent space distribution. A latent sample $z$ is drawn from this distribution using:
+
+$$
+z = \mu + \sigma \cdot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
+$$
+
+This reparameterization trick allows gradients to flow through the sampling process during training. The decoder then reconstructs the image as:
+
+$$
+\hat{x} = \text{VAE}_\text{dec}(z)
+$$
+
+Because the VAE encodes images into a lower-dimensional space while enforcing a smooth latent distribution, diffusion models can perform denoising efficiently in this latent space instead of the original high-dimensional pixel space.
 
 Here is a video showing the forward diffusion process in latent space:
 
@@ -568,7 +604,11 @@ However, this doesn't mean the term is simply ignored. Setting a weight to 0.0 c
 For this reason, it's generally better to omit terms you don't want rather than setting their weights to 0.0, however, neutralizing unwanted effects from multi-token trigger words is a valuable use case for them. Some words or phrases that get split into multiple tokens by CLIP's tokenizer can have unintended influences on generation. By using zero weights strategically, you can keep the trigger word's primary effect while nullifying its unwanted secondary effects.
 Example:
 
-```plaintext
+<!-- TODO: VISUAL DEMONSTRATION USING XYPLOT TECHNOLOGY -->
+
+```bash
+# This prompt engineering ensures the character will be styled as a furry sticker,
+# with a white outline around it but avoids putting stickers on the character's body.
 furry (sticker:0.0)
 ```
 
@@ -579,7 +619,13 @@ furry (sticker:0.0)
 - 1.5 to 2.0: Strong emphasis
 - > 2.0: Very strong emphasis (use with caution)
 
+<!-- TODO: VISUAL DEMONSTRATION USING XYPLOT TECHNOLOGY -->
+
 Depending on the model you are using, even 1.3 can be too strong and can also depend on the specific token in question. When writing prompts, try to use related terms to compliment the attention of the model before trying to use weights.
+
+<!-- TODO: VISUAL DEMONSTRATION USING XYPLOT TECHNOLOGY -->
+
+When a weight gets too strong, this is called in our industry as an "explosion", it is a pretty accurate term visually most of the time, what actually happens in this case, could be literally _anything_, since the model was not trained in that specific conditioning input range you are trying to force images out of.
 
 #### CLIPTextEncodeSD3, CLIPTextEncodeFlux, CLIPTextEncodeSDXL
 
