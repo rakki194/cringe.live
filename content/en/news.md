@@ -17,6 +17,12 @@ aliases:
 
 ---
 
+### 2/1/2025
+
+**Site News:**
+
+- Added a page about [ComfyUI-WaveSpeed](/docs/yiff_toolkit/comfyui/WaveSpeed) which can be used to speed up inference time with my preliminary observations.
+
 ### 1/17/2025
 
 **Site News:**
