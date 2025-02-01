@@ -90,7 +90,7 @@ The node accepts multiple parameters to control how the model is compiled:
   - `is_patcher`: Controls how the model is handled during compilation. `true` treats the input as a fresh model that needs patching, while `false` expects the input to already be a patcher object. Generally you will want to leave this as `true`.
   - `object_to_patch`: Specifies which part of the model architecture to optimize, the default value `diffusion_model` targets the main diffusion model component, which is typically what you want for standard Stable Diffusion workflows.
   - `compiler`: Selects which compiler to use, the default `torch.compile` uses PyTorch's native compiler. The node will dynamically import the selected function.
-  - `fullgraph`: When `true`, PyTorch will attempt to compile the entire model as a single graph. May, or may not result longer compilation times, but it will definitely increase memory usage during compilation. `false` is generally the safer choice.
+  - `fullgraph`: When `true`, PyTorch will attempt to compile the entire model as a single graph. May, or may not result in longer compilation times, but it will definitely increase memory usage during compilation. `false` is generally the safer choice.
   - `dynamic`: Controls how the compiler handles varying input dimensions.
     When `false`, the compiler will optimize for fixed dimensions. It will expect consistent batch sizes, image resolution, sequence lengths and feature dimensions. It will recompile if any of these change in exchange for better performance.
   - `mode`: Sets the optimization mode.
