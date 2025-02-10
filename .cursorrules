@@ -199,3 +199,16 @@ Example:
   }
 }
 ```
+
+## Findings on Blog Folder Structure
+
+1. The main blog content for the English site is located under "content/en".
+2. Within "content/en", there is a "docs" folder that holds structured documentation.
+3. Under "content/en/docs", there is a "yiff_toolkit" directory which further organizes content into various categories.
+4. Inside "content/en/docs/yiff_toolkit", there's a "loras" folder dedicated to LoRA articles.
+5. Within the "loras" folder, a subfolder named "noobai" exists. Its contents include:
+   - An "_index.md" file.
+   - Subdirectories such as "styles", "concepts", and "characters".
+6. Given this structure, the new NoobAI LoRA article for Beksinski LoRA should be placed in:
+   "content/en/docs/yiff_toolkit/loras/noobai/styles/"
+   (for example as "beksinski.md").

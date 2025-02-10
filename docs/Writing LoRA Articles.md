@@ -1,0 +1,176 @@
+---
+title: "How I Write My LoRA Articles: A Comprehensive Guide"
+description: "An in-depth explanation of my LoRA article creation process encompassing style, vocabulary, syntax, Hugo frontmatter and content structure, as well as what to watch out for when using AI to help write these articles."
+summary: "Detailed guide to the writing, styling, and formatting techniques used in the creation of LoRA articles. This document includes the specific syntax and conventions for YAML frontmatter, Hugo shortcodes and markdown formatting."
+weight: 10
+bookToC: false
+bookFlatSection: false
+aliases:
+  - /en/docs/yiff_toolkit/loras/noobai/LoRA-Articles-Guide/
+  - /docs/yiff_toolkit/loras/noobai/LoRA-Articles-Guide
+---
+
+<!--markdownlint-disable MD025 MD033 -->
+
+# How I Write My LoRA Articles
+
+This document provides a comprehensive guide to my methodology in writing LoRA articles. It is intended for both human collaborators and any AI assisting in content creation, detailing writing style, vocabulary, syntactic guidelines, and overall content structure.
+
+## 1. Article Structure and Folder Organization
+
+Every LoRA article is stored under:
+
+    content/en/docs/yiff_toolkit/loras/noobai/styles/
+
+For example, an article on the "Beksinski LoRA" might be named `beksinski.md`.
+
+### Frontmatter
+
+Each article begins with a YAML frontmatter block enclosed within triple-dashed lines. Typical keys include:
+
+- title
+- description
+- summary
+- weight
+- bookToC (boolean)
+- bookFlatSection (boolean)
+- aliases (list)
+
+**Example Frontmatter:**
+
+```yaml
+---
+  title: "Example LoRA Article"
+  description: "Guide for creating and training a specific LoRA model."
+  summary: "Step-by-step guide to training the Example LoRA with best practices."
+  weight: 5
+  bookToC: false
+  bookFlatSection: false
+  aliases:
+    - /en/docs/yiff_toolkit/loras/noobai/styles/example-loRA/
+    - /en/docs/yiff_toolkit/loras/noobai/styles/example-loRA
+    - /docs/yiff_toolkit/loras/noobai/styles/example-loRA/
+    - /docs/yiff_toolkit/loras/noobai/styles/example-loRA
+---
+```
+
+_Note:_ For non-English articles, adjust the aliases accordingly to fit language-specific conventions.
+
+## 2. Writing Style and Vocabulary
+
+- **Clarity and Detail:**  
+  Every instruction is described unambiguously. Command-line examples and technical parameters are fully detailed.
+
+- **Technical Precision:**
+  Use precise terms and exact parameter names (e.g., `--v_parameterization`, `clip_skip`). Do not simplify or omit technical details.
+
+- **Consistent Terminology:**
+  Always use consistent words when referring to model parameters, dataset instructions, and training commands.
+
+- **Guidance for AI:**
+  When an AI drafts these articles, it must:
+  - Include all frontmatter keys exactly as specified.
+  - Reproduce Hugo shortcode syntax with exact spacing and parameters.
+  - Provide complete technical details, including command-line parameters and explanatory notes.
+
+## 3. Syntax and Formatting Conventions
+
+### 3.1 Fenced Code Blocks
+
+- Use triple backticks with a blank line before and after the block.
+- Specify the language (e.g., `bash`, `yaml`).
+
+**Example:**
+
+```bash
+
+git clone git@hf.co:/datasets/user/training_dir C:\training_dir
+cd C:\training_dir
+```
+
+### 3.2 YAML Frontmatter
+
+- Starts and ends with `---` lines.
+- Contains keys such as title, description, summary, weight, bookToC, bookFlatSection, and aliases.
+
+### 3.3 Hugo Shortcodes
+
+Utilize Hugo shortcodes for dynamic content integration.
+
+**Example – Blurhash Image Shortcode:**
+
+```md
+
+{{< blurhash
+  src="https://example.com/image.png"
+  blurhash="LsJIIS%fSwV@.Tb0kDaepIjEs;f*"
+  width="1528"
+  height="1528"
+  alt="Detailed description of the image."
+  grid="true"
+>}}
+```
+
+**Example – Collapsible Section Shortcode:**
+
+```md
+
+{{< section details >}}
+Detailed collapsible content goes here.
+{{< /section >}}
+```
+
+### 3.4 Markdownlint Disables
+
+Include comments to disable specific markdownlint rules when necessary:
+
+```md
+
+<!--markdownlint-disable MD025 MD033 -->
+```
+
+## 4. Guidelines for AI-Assisted Drafting
+
+When an AI writes a LoRA article, it must ensure:
+
+- **Exact Syntax Reproduction:**
+  Frontmatter and shortcode syntaxes must be reproduced without deviation.
+
+- **Complete Technical Details:**
+  Do not omit command-line parameters or any descriptive annotations.
+
+- **Precision in Terminology:**
+  Use exact flags (e.g., `--v_parameterization` remains exactly as is).
+
+- **Consistent Formatting:**
+  Ensure that fenced code blocks are properly separated by blank lines and follow markdown style rules.
+
+## 5. Detailed Article Sections
+
+A standard LoRA article should include:
+
+1. **Introduction:**  
+   Overview of the LoRA model, including version details and contextual background.
+
+2. **Content & Media:**
+   Detailed links to downloads, datasets, metadata, and visual media with proper annotations.
+
+3. **Prompting Guide:**
+   Clear guidelines for positive and negative prompts, often including fenced code blocks with examples.
+
+4. **Training Instructions/Montage:**
+   Comprehensive training commands are provided as multi-line code snippets.
+
+5. **Related Resources:**
+   Use Hugo's related-posts shortcode as shown below:
+
+```md
+
+<!--
+HUGO_SEARCH_EXCLUDE_START
+-->
+{{< related-posts related="docs/yiff_toolkit/loras/noobai/styles/example/" >}}
+<!--
+HUGO_SEARCH_EXCLUDE_END
+-->
+```
