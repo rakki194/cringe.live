@@ -6,15 +6,11 @@ This document outlines the technical writing style used for creating detailed gu
 
 ### Fenced Code Blocks
 
-- All code blocks are surrounded by a blank line before and after to ensure proper markdown rendering.
-- The language specifier (e.g., "bash", "yaml", "markdown") is always provided to enable accurate syntax highlighting.
+All code blocks must be surrounded by a blank line before and after them to ensure proper markdown rendering, and the language specifier (for example, "bash", "yaml", or "markdown") is always provided so that syntax highlighting is accurate.
 
 ### YAML Frontmatter
 
-- Every document starts with a YAML frontmatter block enclosed within triple-dashed lines.
-- Mandatory keys include: title, description, summary, weight, bookToC, bookFlatSection, and aliases.
-
-- For English content, aliases include the "/en/docs/" root; for other languages, language-specific prefixes such as "/hu/docs/" or "/ja/docs/" are used to ensure clear content organization across translations.
+Every document begins with a YAML frontmatter block that is enclosed within triple-dashed lines. The mandatory keys include title, description, summary, weight, bookToC, bookFlatSection, and aliases. For English content, the aliases include the "/en/docs/" root; for other languages, language-specific prefixes such as "/hu/docs/" or "/ja/docs/" are used to ensure clear content organization across translations.
 
 ### Hugo Shortcodes
 
@@ -58,13 +54,11 @@ This format is ideal for complex transformations and gradient formulas, enhancin
 
 ### Frontmatter Specifications
 
-- The YAML frontmatter provides metadata that Hugo uses to index and bundle the content correctly. This includes creating multiple URL aliases ensuring content is discoverable under various paths.
-- The uniformity in frontmatter keys and alias patterns guarantees that documentation remains well-structured and easily navigable, crucial for technical topics like LoRA training details.
+The YAML frontmatter provides metadata that Hugo uses to index and bundle the content correctly, including the creation of multiple URL aliases to ensure content is discoverable under various paths. Moreover, the uniformity in frontmatter keys and alias patterns guarantees that documentation remains well-structured and easily navigable, which is crucial for technical topics like LoRA training details.
 
 ### Hugo Shortcodes and Dynamic Content
 
-
-- Hugo shortcodes are used extensively to provide dynamic, reusable content components within the documentation. In addition to blurhash images, shortcodes include those for collapsible sections and related posts linking.
+Hugo shortcodes are used extensively to provide dynamic, reusable content components within the documentation. In addition to incorporating blurhash images, these shortcodes are also employed for collapsible sections and linking related posts.
 
 An example of a collapsible section shortcode is:
 
@@ -76,37 +70,30 @@ Detailed explanatory content goes here.
 
 This allows embedding of long explanations or code samples that can be expanded or collapsed as required by the reader.
 
-- Dynamic features allow for the integration of live examples, visualizations, and even interactive code snippets which are crucial in demonstrating training workflows and performance metrics.
+Dynamic features allow for the integration of live examples, visualizations, and even interactive code snippets which are crucial in demonstrating training workflows and performance metrics.
 
-3.3 Multilingual Content Management
+### Multilingual Content Management
 
-- A strict convention is followed where English content uses "/en/docs/" as the base alias, while other languages (e.g., Hungarian or Japanese) use their language codes ("/hu/docs/", "/ja/docs/").
-- This not only ensures proper indexing in Hugo but also maintains a consistent file and URL structure across multilingual documentation.
+A strict convention is followed where English content uses "/en/docs/" as the base alias, while other languages (e.g., Hungarian or Japanese) use their language codes ("/hu/docs/", "/ja/docs/"). This not only ensures proper indexing in Hugo but also maintains a consistent file and URL structure across multilingual documentation.
 
-3.4 Integration of Technical Images and Visual Data
+### Integration of Technical Images and Visual Data
 
-- Images, graphs, and plots (often representing LoRA training results or model performance metrics) are incorporated using Hugo's dynamic image embedding features coupled with blurhash.
-- The blurhash shortcode renders a low-detail placeholder until the full image loads, which enhances user experience without sacrificing technical clarity.
+Images, graphs, and plots (often representing LoRA training results or model performance metrics) are incorporated using Hugo's dynamic image embedding features coupled with blurhash. The blurhash shortcode renders a low-detail placeholder until the full image loads, which enhances user experience without sacrificing technical clarity.
 
-4. Structural and Stylistic Guidelines
+### Structural and Stylistic Guidelines
 
-4.1 Clarity, Detail, and Reproducibility
+#### Clarity, Detail, and Reproducibility
 
-- Documentation is segmented into logically ordered sections, often starting with an overview, followed by detailed step-by-step instructions, examples, and concluding with technical analyses.
-- Every code snippet, command-line instruction, and mathematical derivation is provided in full detail. For example, a full explanation of LoRA weight decomposition is paired with both LaTeX equations and descriptive text.
-- 
-4.2 Consistency and Technical Precision
+Documentation is segmented into logically ordered sections, often starting with an overview, followed by detailed step-by-step instructions, examples, and concluding with technical analyses. Every code snippet, command-line instruction, and mathematical derivation is provided in full detail. For example, a full explanation of LoRA weight decomposition is paired with both LaTeX equations and descriptive text.
 
-- Consistency in technical terminology is paramount. Commands (such as '--v_parameterization' or 'clip_skip') are always mentioned exactly as they are expected to be used.
-- The approach ensures that both novices and experts can follow the documentation without ambiguity, fostering a reproducible environment for technical experiments and model training.
+#### Consistency and Technical Precision
 
+Consistency in technical terminology is paramount. Commands (such as '--v_parameterization' or 'clip_skip') are always mentioned exactly as they are expected to be used. The approach ensures that both novices and experts can follow the documentation without ambiguity, fostering a reproducible environment for technical experiments and model training.
 
-// 5. Application for LoRA Training Documentation and Analysis
+#### Application for LoRA Training Documentation and Analysis
 
-// 5.1 Conveying LoRA Training Results
-// - The documentation frequently integrates LaTeX-rendered formulas to communicate results from experiments (e.g., gradient analysis, weight normalization, etc.).
-// - Graphs and plots are described with accompanying Hugo shortcodes to embed interactive or high-quality static visualizations of training performance.
+// 5.1 Conveying LoRA Training Results: The documentation frequently integrates LaTeX-rendered formulas to communicate results from experiments (e.g., gradient analysis, weight normalization, etc.). Graphs and plots are described with accompanying Hugo shortcodes to embed interactive or high-quality static visualizations of training performance.
 
-// 5.2 Integration with AI-Assisted Drafting
-// - The guidelines ensure that both AI and human contributors adhere strictly to the formatting rules, which helps in maintaining consistency across documents generated or edited in collaborative workflows.
-// - Precise instructions for LaTeX, markdown formatting, and Hugo features make automated content generation more reliable and accurate.
+#### Integration with AI-Assisted Drafting
+
+The guidelines ensure that both AI and human contributors adhere strictly to the formatting rules, which helps in maintaining consistency across documents generated or edited in collaborative workflows. Precise instructions for LaTeX, markdown formatting, and Hugo features make automated content generation more reliable and accurate.
