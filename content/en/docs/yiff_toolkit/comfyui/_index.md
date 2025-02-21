@@ -9,7 +9,7 @@ aliases:
   - /docs/yiff_toolkit/comfyui
   - /en/docs/yiff_toolkit/comfyui/
   - /en/docs/yiff_toolkit/comfyui
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/confused2_resized.jpg"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/confused2_resized.jpg"
 image_alt: "The image depicts an anthropomorphic white wolf character adorned in a purple wizard's hat and robe, engrossed in reading a parchment. The setting appears to be a library or study, as evidenced by the shelves of books in the background. The wolf's expression conveys a sense of concentration or concern while examining the document. The scene is further enriched by a brick archway and a distant view of a medieval-style town with pointed towers and spires, enhancing the fantasy theme. This image skillfully combines elements of anthropomorphism and fantasy, creating a visually engaging scene that evokes curiosity about the character's role and the contents of the parchment."
 blurhash: "LoH^#C~UtOXA-p%LtQo#R.oyozWY"
 ---
@@ -131,7 +131,7 @@ The forward diffusion process systematically transforms a clear image into pure 
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/forward_diffusion.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/forward_diffusion.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -191,7 +191,7 @@ Here is a video showing the forward diffusion process in latent space:
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/latent_forward_diffusion.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/latent_forward_diffusion.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -387,7 +387,7 @@ The visualization below shows three key aspects of the v-prediction process: the
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/v_prediction.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/v_prediction.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -504,7 +504,7 @@ For more control over the v-prediction process, you can use:
 ### Conditioning and Control
 
 {{< blurhash
-src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/conditioning_and_control_resize.jpg"
+src="https://huggingface.co/rakki194/yt/resolve/main/static/conditioning_and_control_resize.jpg"
 blurhash="LWAKUeof9ERk.Aj[IUR\*MvWC%Moe"
 width="1440"
 height="901"
@@ -633,7 +633,7 @@ Specialized CLIP nodes, as their name suggests, for different models.
 
 While these are useful to some degree for FLUX, SD3 and above, for SDXL, since both CLIP-L and CLIP-G was trained with the same prompts, you will achieve better results by using the same prompt, therefore the regular `CLIPTextEncode` node is sufficient, and as shown on the screenshot below, for regional conditioning you can always use `Conditioning (Set Area)`, which will work with all of the CLIP nodes.
 
-![The rest of the CLIP Gang](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIPTextEncodeGang.png)
+![The rest of the CLIP Gang](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/CLIPTextEncodeGang.png)
 
 <!--WRITE ABOUT FLUX PROMPTING-->
 
@@ -645,13 +645,13 @@ Consider what happens when you input a prompt like "a red cat sitting on a blue 
 
 In most workflows, interaction with CLIP starts right from `Load Checkpoint` and ends at `KSampler`:
 
-![CLIP's place in the workflow](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/basic_clip_example.png)
+![CLIP's place in the workflow](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/basic_clip_example.png)
 
 But you can also load it separately from the checkpoint using either the `Load CLIP`, `DualCLIPLoader` or `TripleCLIPLoader` nodes as needed.
 
-![Various CLIP loaders in ComfyUI](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/CLIP_Loaders.png)
+![Various CLIP loaders in ComfyUI](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/CLIP_Loaders.png)
 
-![CLIP](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/ClipNodes.png)
+![CLIP](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/ClipNodes.png)
 
 **Advanced CLIP Operations: The ConditioningCombine Node**
 To support complex prompting scenarios, ComfyUI provides the `ConditioningCombine` node that implements mathematical operations on conditioning vectors:
@@ -896,14 +896,14 @@ To begin experimenting with these concepts, you can clear your workflow:
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
 
 You can add nodes by either right-clicking or double-clicking on an empty area:
 
-![Right Click Add Method](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/right_click_add.png)
+![Right Click Add Method](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/right_click_add.png)
 
 ---
 

@@ -24,9 +24,9 @@ summary: "『長ぐつをはいた猫』に登場する死神は、その不気�
 
 ---
 
-[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/dth-v1e400/dth-v1e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/dth-v1e400/dth-v1e400.safetensors?download=true)
 
-[⬇️ 軽量版LoRAダウンロード (46MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/dth-v1e400/dth-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 軽量版LoRAダウンロード (46MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/dth-v1e400/dth-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/dth-compass)
 
@@ -55,18 +55,18 @@ dth, cloak, red eyes
   
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![AIで生成された画像](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000169-07091531.png?download=true)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000169-07091531.png?download=true)
+[![AIで生成された画像](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000169-07091531.png?download=true)](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000169-07091531.png?download=true)
 
   </div>
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![AIで生成された画像](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000167-07091523.png?download=true)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000167-07091523.png?download=true)
+[![AIで生成された画像](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000167-07091523.png?download=true)](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000167-07091523.png?download=true)
 
   </div>
 </div>
 <div style="display: flex; justify-content: center;">
 
-[![AIで生成された画像](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000168-07091524.png?download=true)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/dth-compass/00000168-07091524.png?download=true)
+[![AIで生成された画像](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000168-07091524.png?download=true)](https://huggingface.co/rakki194/yt/resolve/main/static/dth-compass/00000168-07091524.png?download=true)
 
 </div>
 

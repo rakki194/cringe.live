@@ -25,9 +25,9 @@ Ozoneserpent’s art style is quite distinctive and engaging. Their work often f
 
 ---
 
-[⬇️ LoRA Download (223MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134.safetensors?download=true)
+[⬇️ LoRA Download (223MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (52.9MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134_frockpt1_th-3.55.safetensors)
+[⬇️ Shrunk LoRA Download (52.9MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134_frockpt1_th-3.55.safetensors)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/ozoneserpent)
 
@@ -35,7 +35,7 @@ Ozoneserpent’s art style is quite distinctive and engaging. Their work often f
 [📐 Dataset](https://huggingface.co/datasets/k4d3/furry/tree/main/)
 -->
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/ozoneserpent-v7e134/ozoneserpent-v7e134.json)
 
 ## Prompting Guide
 
@@ -62,19 +62,19 @@ It will align better with the original style if you use the keyword!
 <div style="display: flex; justify-content: space-between;">
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i_00036_.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i_00036_.png)
+[![An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i_00036_.png)](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i_00036_.png)
 
 </div>
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i_00056_.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i_00056_.png)
+[![An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i_00056_.png)](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i_00056_.png)
 
   </div>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
 
-[![An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i/horny-awoo.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/ozoneserpent/i2i/horny-awoo.png)
+[![An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i/horny-awoo.png)](https://huggingface.co/rakki194/yt/resolve/main/static/ozoneserpent/i2i/horny-awoo.png)
 
 </div>
 

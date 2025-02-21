@@ -64,13 +64,13 @@ _wickerbeast_のデータのダウンロードに進みましょう。ターミ�
 
 [Grabber](https://github.com/Bionus/imgbrd-grabber)は、画像掲示板からデータセットを素早くコンパイルする際の作業を簡単にします。
 
-[![Grabberのスクリーンショット。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)
+[![Grabberのスクリーンショット。](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)
 
 ダウンロードタブの`Add`ボタンをクリックすると、ダウンロードする`group`を追加できます。`Tags`にはe621.netで使用するような検索パラメータを入力できます。例えば、`wickerbeast solo -comic -meme -animated order:score`という文字列は、コミック、ミーム、アニメーション投稿を除外した単独のwickerbeast画像をスコア順に検索します。SDXL LoRAのトレーニングには通常50枚以上の画像は必要ありませんが、soloグループを`40`に設定し、`solo`の代わりに`-solo`を使用して新しいグループを追加し、`Image Limit`を`10`に設定して、他のキャラクターを含む画像も含めるようにすると良いでしょう。これによりモデルの学習効果が大幅に向上します！
 
 また、e621用に`Separate log files`を有効にすると、画像と一緒にメタデータが自動的にダウンロードされます。
 
-[![Grabberの別のスクリーンショット。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)
+[![Grabberの別のスクリーンショット。](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)
 
 Pony用に、テキストファイルの内容を`rating_%rating%, %all:separator=^, %`のように設定しています。他のモデルでは、`rating_%rating%`を単に`%rating%`に置き換えたい場合があります。例えば、SeaArt/CompassMixでは`%all:separator=^, %, %rating%`を使用しています。
 
@@ -380,7 +380,7 @@ Stable Diffusionの埋め込みは、入力データ（画像やテキストな�
 
 ---
 
-新しいブロック、SeaArt Furryを基にしたLodestoneによるGANの魔法によって作成されたこのミックスは、元のモデルを改善することを試みましたが、成功しました！このミックスに対してLoRAをトレーニングするための推奨方法は、通常のミックスとして扱うことではなく、このミックスに対して直接LoRAをトレーニングすることです。私の実験([[#1](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/plot1.png)] [[Dataset Reference](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/obra_dataset_reference.png)], [[#2](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/plot2.png)] [[Example Output](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/ComfyUI_00606_.png)])は、LoRAsがCompassに直接トレーニングされた場合、はるかに優れた結果をもたらすことを示しています。新しい[compass_optimizer](https://github.com/lodestone-rock/compass_optimizer)をトレーニングスクリプトに追加することを忘れないでください。これは、一般化と全体的なトレーニングに役立ちます。これを設定するには、[ここ](https://github.com/ka-de/sd-scripts/tree/lodew/library/optimizers)にあるものを使用することをお勧めします。これには、デフォルトのパラメータを使用して正規化を行うものが含まれています。また、[縮小](/docs/yiff_toolkit/lora_training_guide/#shrinking)することを忘れないでください。
+新しいブロック、SeaArt Furryを基にしたLodestoneによるGANの魔法によって作成されたこのミックスは、元のモデルを改善することを試みましたが、成功しました！このミックスに対してLoRAをトレーニングするための推奨方法は、通常のミックスとして扱うことではなく、このミックスに対して直接LoRAをトレーニングすることです。私の実験([[#1](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/plot1.png)] [[Dataset Reference](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/obra_dataset_reference.png)], [[#2](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/plot2.png)] [[Example Output](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/ComfyUI_00606_.png)])は、LoRAsがCompassに直接トレーニングされた場合、はるかに優れた結果をもたらすことを示しています。新しい[compass_optimizer](https://github.com/lodestone-rock/compass_optimizer)をトレーニングスクリプトに追加することを忘れないでください。これは、一般化と全体的なトレーニングに役立ちます。これを設定するには、[ここ](https://github.com/ka-de/sd-scripts/tree/lodew/library/optimizers)にあるものを使用することをお勧めします。これには、デフォルトのパラメータを使用して正規化を行うものが含まれています。また、[縮小](/docs/yiff_toolkit/lora_training_guide/#shrinking)することを忘れないでください。
 
 ### SeaArt Furry
 
@@ -460,7 +460,7 @@ mane
 
 それだけです。
 
-![[An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/predicted_normal_18_00024_.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/predicted_normal_18_00024_.png)
+![[An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/predicted_normal_18_00024_.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/predicted_normal_18_00024_.png)
 
 > Thanks to OCPik4chu on Discord for the tip!
 

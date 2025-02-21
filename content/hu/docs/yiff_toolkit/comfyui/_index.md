@@ -57,14 +57,14 @@ Most kezdjük az alapoktól és egyszerűsítsük le a munkafolyamatot. Íme, ho
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
         A böngésződ nem támogatja a videó címkét.
     </video>
 </div>
 
 Most, hogy tiszta lappal indulsz, adjunk hozzá egy node-ot. Ezt kétféleképpen teheted meg. Az egyik mód, hogy jobb klikkel kattintasz a munkafolyamat egy üres részére. A másik mód, ami kicsit intuitívabb, hogy bal klikkel duplán kattintasz egy üres részre.
 
-![Jobb Klikk Hozzáadási Módszer](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/right_click_add.png)
+![Jobb Klikk Hozzáadási Módszer](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/right_click_add.png)
 
 ---
 

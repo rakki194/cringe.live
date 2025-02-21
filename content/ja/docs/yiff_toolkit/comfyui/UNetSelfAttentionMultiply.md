@@ -12,7 +12,7 @@ summary: "`UNetSelfAttentionMultiply`関数は、ネットワークの重要な�
 
 <div style="display: flex; justify-content: center;">
 
-![ComfyUIにおけるUNetSelfAttentionMultiplyノードの画像。](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/UNetSelfAttentionMultiply.png)
+![ComfyUIにおけるUNetSelfAttentionMultiplyノードの画像。](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/UNetSelfAttentionMultiply.png)
 
 </div>
 
@@ -20,11 +20,11 @@ U-Netなどの画像拡散ネットワークにおける`UNetSelfAttentionMultip
 
 簡単に言えば、この関数は言語モデルの温度を調整するのと同様に、ネットワークのアテンション機構の微調整ノブとして機能します。セルフアテンションを増加させることで、ネットワークは画像の重要な側面をより正確に識別し強調することができ、より高品質で洗練された出力が得られます。この強化は、リアルな画像の生成や複雑なシーンの明瞭さを向上させるなど、高レベルの詳細さと正確さが必要なタスクで特に有用です。
 
-![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot3.png)
+![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot3.png)
 
-![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot2.png)
+![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot2.png)
 
-![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot.png)
+![UNetSelfAttentionMultiplyの異なる値間のプロット](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot.png)
 
 ---
 

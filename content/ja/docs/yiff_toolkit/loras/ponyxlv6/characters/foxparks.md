@@ -22,9 +22,9 @@ Foxparksは、ゲーム「Palworld」に登場するキャラクターです。�
 
 ---
 
-[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/foxparks-v2e134.safetensors?download=true)
+[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/foxparks-v2e134.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (50.7MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/foxparks-v2e134_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (50.7MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/foxparks-v2e134_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

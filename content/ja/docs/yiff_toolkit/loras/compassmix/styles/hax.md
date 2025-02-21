@@ -24,9 +24,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
 
 ---
 
-[⬇️ LoRAダウンロード (234MB)](https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/compass_loras/by_hax-v1e400/by_hax-v1e400.safetensors)
+[⬇️ LoRAダウンロード (234MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/by_hax-v1e400/by_hax-v1e400.safetensors)
 
-[⬇️ 圧縮版LoRAダウンロード (57.2MB)](https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/compass_loras/by_hax-v1e400/by_hax-v1e400_frockpt1_th-3.55.safetensors)
+[⬇️ 圧縮版LoRAダウンロード (57.2MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/by_hax-v1e400/by_hax-v1e400_frockpt1_th-3.55.safetensors)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit2/tree/main/static/by_hax-compass)
 
@@ -48,9 +48,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00216_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00216_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00216_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00216_.png"
         blurhash="LeHxmM.Sx^RO_4SixanhShIUM{xt"
         width="1440"
         height="1440"
@@ -58,9 +58,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00238_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00238_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00238_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00238_.png"
         blurhash="LKDlyfO@?GRQ~qbc$dIUVss:skR+"
         width="1440"
         height="1440"
@@ -73,9 +73,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00171_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00171_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00171_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00171_.png"
         blurhash="LHG*ZhRP#h0h_3M}M_RiT2oJMwxY"
         width="1440"
         height="1440"
@@ -83,9 +83,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00209_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00209_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/upscaled_00209_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/upscaled_00209_.png"
         blurhash="LIEo6:0MtkVs-oIWbH$*0L-oIpW="
         width="1440"
         height="1440"
@@ -98,9 +98,9 @@ LofiとKenketの芸術スタイル（haxとして知られる）は、擬人化�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/predicted_perpneg_normal_18_00004_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/predicted_perpneg_normal_18_00004_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit2/resolve/main/static/by_hax-compass/predicted_perpneg_normal_18_00004_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_hax-compass/predicted_perpneg_normal_18_00004_.png"
         blurhash="LeIE37%Lo}k8T}xvozWBp1S6NKs9"
         width="1440"
         height="1440"

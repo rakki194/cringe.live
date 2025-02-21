@@ -18,13 +18,13 @@ summary: ""
 
 まず、プロジェクトの[GitHub](https://github.com/Acly/krita-ai-diffusion/releases)リリースページにアクセスし、最新のzipファイルをダウンロードします。_Source code_アーカイブではなく、最初のzipファイルをクリックするようにしてください！
 
-![krita-ai-diffusionのダウンロード方法を示す画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_download.png)
+![krita-ai-diffusionのダウンロード方法を示す画像。](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_download.png)
 
 ## ???
 
 Dockerの左上にあるワークスペース選択ボタンをクリックします。
 
-![krita-ai-diffusionでカスタムComfyUIワークフローに接続する方法を示す画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_select_graph.png)
+![krita-ai-diffusionでカスタムComfyUIワークフローに接続する方法を示す画像。](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_select_graph.png)
 
 ## ComfyUIでKritaプラグインを使用するために必要な基本ノード
 
@@ -45,17 +45,17 @@ pip install argostranslate
 
 2つのノードがあります。1つ目は__Krita Output__ノードで、これは単に__VAE Decode__の_image_出力に接続するだけです。
 
-![Krita Outputノードを示すComfyUIのスクリーンショット。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_output_node.png)
+![Krita Outputノードを示すComfyUIのスクリーンショット。](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_output_node.png)
 
 もう1つは__Krita Canvas__ノードで、その_width_と_height_出力を、__Empty Latent Image__ノードや__CLIPTextEncodeSDXL__など、生成しようとしている画像の全体の幅と高さを必要とするものに接続し、_seed_入力は_KSampler_の_seed_に接続する必要があります。
 
-![Empty Latent Imageなどのノードに接続されたKrita Canvasノードを示すComfyUIのスクリーンショット。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_canvas_node.png)
+![Empty Latent Imageなどのノードに接続されたKrita Canvasノードを示すComfyUIのスクリーンショット。](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_canvas_node.png)
 
 ウィジェットを入力に変換するには、ノードを右クリックして__Convert Widget to Input__の下にあるウィジェットを見つけるだけで良いことを覚えておいてください：
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_convert_to_input.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_convert_to_input.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>
@@ -64,7 +64,7 @@ pip install argostranslate
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/krita_ai_new_frontend_shill.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/krita_ai_new_frontend_shill.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>

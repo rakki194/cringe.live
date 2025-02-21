@@ -57,14 +57,14 @@ ComfyUIを初めて開くと、複雑に見えるユニークなインターフ�
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/clear_workflow.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>
 
 これで白紙の状態になったので、ノードを追加してみましょう。ノードを追加するには2つの方法があります。1つはワークフローの空いている部分を右クリックする方法です。もう1つは、より直感的な方法で、ワークフローの空いている部分を左クリックで2回クリックする方法です。
 
-![右クリックで追加する方法](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/right_click_add.png)
+![右クリックで追加する方法](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/right_click_add.png)
 
 ---
 

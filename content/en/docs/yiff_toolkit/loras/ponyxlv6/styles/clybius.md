@@ -25,9 +25,9 @@ An AI artist to bias the dataset towards detailed owls.
 
 ---
 
-[⬇️ LoRA Download (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/by_clybius-v1e400.safetensors?download=true)
+[⬇️ LoRA Download (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/by_clybius-v1e400.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (43.1MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/by_clybius-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (43.1MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/by_clybius-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -40,9 +40,9 @@ An AI artist to bias the dataset towards detailed owls.
 ---
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_clybius/00001289-05020303.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_clybius/00001289-05020303.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_clybius/00001289-05020303-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_clybius/00001289-05020303-512.png"
         blurhash="LLHxTsNK}@r;~WNHMxslMxSis-RQ"
         width="512"
         height="512"
@@ -54,9 +54,9 @@ An AI artist to bias the dataset towards detailed owls.
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_clybius/00001293-05020312.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_clybius/00001293-05020312.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_clybius/00001293-05020312-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_clybius/00001293-05020312-512.png"
         blurhash="LNH-+7J7-JIV?79bNNjX0L%1Shoa"
         width="512"
         height="512"

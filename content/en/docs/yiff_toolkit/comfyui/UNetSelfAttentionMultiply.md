@@ -15,7 +15,7 @@ aliases:
 
 <div style="display: flex; justify-content: center;">
 
-![An image of the UNetSelfAttentionMultiply node in ComfyUI.](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/UNetSelfAttentionMultiply.png)
+![An image of the UNetSelfAttentionMultiply node in ComfyUI.](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/UNetSelfAttentionMultiply.png)
 
 </div>
 
@@ -23,11 +23,11 @@ The `UNetSelfAttentionMultiply` function in image diffusion networks, such as U-
 
 In simpler terms, this function acts like a fine-tuning knob for the network's attention mechanism, similar to adjusting the temperature in a language model. By increasing the self-attention, the network becomes more precise in identifying and emphasizing critical aspects of the image, resulting in higher quality and more refined outputs. This enhancement is particularly useful in tasks that require a high level of detail and accuracy, such as generating realistic images or improving the clarity of complex scenes.
 
-![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot3.png)
+![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot3.png)
 
-![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot2.png)
+![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot2.png)
 
-![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/plot.png)
+![A plot between different values of UNetSelfAttentionMultiply](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/plot.png)
 
 ---
 

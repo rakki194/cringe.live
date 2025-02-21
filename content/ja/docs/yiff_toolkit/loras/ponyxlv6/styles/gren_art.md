@@ -22,11 +22,11 @@ gRen_artはAIを使用してリアルな獣人アートを作成しています�
 
 ---
 
-[⬇️ LoRAダウンロード (30.5 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/by_gren_art-v3s512.safetensors)
+[⬇️ LoRAダウンロード (30.5 MB)](https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/by_gren_art-v3s512.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/gren_art)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/by_gren_art-v3s512.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/by_gren_art-v3s512.json)
 
 ## プロンプトガイド
 
@@ -40,9 +40,9 @@ gRen_artはAIを使用してリアルな獣人アートを作成しています�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/samplercustom_02162_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/samplercustom_02162_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/samplercustom_02162_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/samplercustom_02162_.png"
       blurhash="LLG@=FEg^%=yxuNHE1E20ei_D*bb"
       width="1536"
       height="1536"
@@ -50,9 +50,9 @@ gRen_artはAIを使用してリアルな獣人アートを作成しています�
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/samplercustom_02178_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/samplercustom_02178_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/samplercustom_02178_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/samplercustom_02178_.png"
       blurhash="LSI5A1t7_2xZ15s:9vNGH?R*IAay"
       width="1536"
       height="1536"
@@ -65,9 +65,9 @@ gRen_artはAIを使用してリアルな獣人アートを作成しています�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/plot_gren1.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/plot_gren1.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/gren_art/plot_gren1.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/gren_art/plot_gren1.png"
       blurhash="LAI;|=noIAJ7PX}mtRozr;F2jYaK"
       width="3072"
       height="1616"

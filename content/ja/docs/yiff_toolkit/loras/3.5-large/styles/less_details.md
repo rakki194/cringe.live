@@ -14,7 +14,7 @@ summary: "このLoRAは、Minitのスクリーンショットを多数使用し�
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/plot3003k_samplea.webm" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/plot3003k_samplea.webm" type="video/mp4">
         お使いのブラウザは動画タグをサポートしていません。
     </video>
 </div>
@@ -29,11 +29,11 @@ Minitのスクリーンショットを多数使用してLoRAを学習させま�
 
 ---
 
-[⬇️ LoRAのダウンロード (87 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/less_details-v1s6000.safetensors)
+[⬇️ LoRAのダウンロード (87 MB)](https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/less_details-v1s6000.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/minit)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/less_details-v1s6000.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/less_details-v1s6000.json)
 
 ## サンプル画像
 
@@ -41,9 +41,9 @@ Minitのスクリーンショットを多数使用してLoRAを学習させま�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/cumfy_00015_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/cumfy_00015_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/cumfy_00015_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/cumfy_00015_.png"
       blurhash="LJG+UMxu00IU-;Rj9Ft74nj[M{of"
       width="1024"
       height="1024"
@@ -57,9 +57,9 @@ Minitのスクリーンショットを多数使用してLoRAを学習させま�
 <div class="image-grid">
   <div class="image-grid-container">
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/plot1.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/plot1.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/plot1.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/plot1.png"
       blurhash="LKC@^6k?t6t5-bo$fmWAl:t8t7ba"
       width="3456"
       height="946"
@@ -76,7 +76,7 @@ Minitのスクリーンショットを多数使用してLoRAを学習させま�
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/sd35/less_details/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/sd35/less_details/sample_sample00.mp4" type="video/mp4">
         お使いのブラウザは動画タグをサポートしていません。
     </video>
 </div>

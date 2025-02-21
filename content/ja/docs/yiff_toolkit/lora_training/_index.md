@@ -771,7 +771,7 @@ python resize_lora.py -o {output_directory} -r fro_ckpt=1,thr=-3.55 model.safete
 
 `{output_directory}`を希望の出力ディレクトリに、`model.safetensors`をLoRAのトレーニングに使用したチェックポイントまたは新しいLoRAを使用したいチェックポイントに、`lora.safetensors`を縮小したいLoRAに置き換えてください。
 
-Feel free to experiment with any of the SVD recipes, which you can read about in the project's README, my recommendation is obviously just a personal bias, but I did try to [test](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), a [lot](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), so others won't feel the need to!
+Feel free to experiment with any of the SVD recipes, which you can read about in the project's README, my recommendation is obviously just a personal bias, but I did try to [test](https://huggingface.co/rakki194/yt/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), a [lot](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), so others won't feel the need to!
 
 ## ステップとエポック
 

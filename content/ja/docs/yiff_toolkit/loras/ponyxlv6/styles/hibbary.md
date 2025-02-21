@@ -16,9 +16,9 @@ summary: ""
 
 ---
 
-[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/by_hibbary-v1e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/by_hibbary-v1e400.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (44.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/by_hibbary-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (44.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/by_hibbary-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

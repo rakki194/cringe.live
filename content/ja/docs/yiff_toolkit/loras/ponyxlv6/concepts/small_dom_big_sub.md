@@ -22,9 +22,9 @@ summary: "体格の小さいキャラクターが体格の大きいキャラク�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/small_dom_big_sub-v2e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/small_dom_big_sub-v2e400.safetensors?download=true)
 
-[⬇️ 軽量版LoRAダウンロード (43.6MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/small_dom_big_sub-v2e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 軽量版LoRAダウンロード (43.6MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/small_dom_big_sub-v2e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/{})
 

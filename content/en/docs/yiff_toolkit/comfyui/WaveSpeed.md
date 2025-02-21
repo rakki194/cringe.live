@@ -11,7 +11,7 @@ aliases:
     - /docs/yiff_toolkit/comfyui/WaveSpeed
     - /docs/yiff_toolkit/comfyui/wavespeed/
     - /docs/yiff_toolkit/comfyui/wavespeed
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfywave_resized.jpg"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/comfywave_resized.webp"
 image_alt: "The image depicts a fennec girl submerged underwater, gracefully swimming beneath the surface. She has blonde, slightly tousled hair, large fennec-like ears with white fur at the tips, and a bushy, cream-colored tail. She is dressed in a dark blue oversized jacket, which drapes loosely over her form, and wears black shoes. Her expression is calm and serene as she gazes toward the viewer, with small bubbles escaping toward the water's surface, which is illuminated by soft sunlight filtering from above. The deep blue hue of the surrounding water contrasts with her light fur and clothing, creating a visually striking composition that conveys a tranquil and dreamlike atmosphere."
 blurhash: "LG5s+uaKI]X8*0jYM{R+n4oyVrRQ"
 ---
@@ -56,9 +56,9 @@ $$
 \text{caching_decision} = \mathbf{1}_{|r_t - r_{t-1}| < \text{threshold}}
 $$
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/wavespeed_plot_1.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/wavespeed_plot_1.png">
 {{< blurhash
-  src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/wavespeed_plot_1.png"
+  src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/wavespeed_plot_1.webp"
   blurhash="LB6R+6ovk9ox?wkBkBbH?[j]j[f*"
   width="4544"
   height="1986"
@@ -86,20 +86,21 @@ comfy launch -- --gpu-only
 ```
 
 The node accepts multiple parameters to control how the model is compiled:
-  - `model` (Required Input): Takes any model input. This is where you connect your diffusion model output. Can be a base model, patched model, or one that's already had First Block Cache applied.
-  - `is_patcher`: Controls how the model is handled during compilation. `true` treats the input as a fresh model that needs patching, while `false` expects the input to already be a patcher object. Generally you will want to leave this as `true`.
-  - `object_to_patch`: Specifies which part of the model architecture to optimize, the default value `diffusion_model` targets the main diffusion model component, which is typically what you want for standard Stable Diffusion workflows.
-  - `compiler`: Selects which compiler to use, the default `torch.compile` uses PyTorch's native compiler. The node will dynamically import the selected function.
-  - `fullgraph`: When `true`, PyTorch will attempt to compile the entire model as a single graph. May, or may not result in longer compilation times, but it will definitely increase memory usage during compilation. `false` is generally the safer choice.
-  - `dynamic`: Controls how the compiler handles varying input dimensions.
+
+- `model` (Required Input): Takes any model input. This is where you connect your diffusion model output. Can be a base model, patched model, or one that's already had First Block Cache applied.
+- `is_patcher`: Controls how the model is handled during compilation. `true` treats the input as a fresh model that needs patching, while `false` expects the input to already be a patcher object. Generally you will want to leave this as `true`.
+- `object_to_patch`: Specifies which part of the model architecture to optimize, the default value `diffusion_model` targets the main diffusion model component, which is typically what you want for standard Stable Diffusion workflows.
+- `compiler`: Selects which compiler to use, the default `torch.compile` uses PyTorch's native compiler. The node will dynamically import the selected function.
+- `fullgraph`: When `true`, PyTorch will attempt to compile the entire model as a single graph. May, or may not result in longer compilation times, but it will definitely increase memory usage during compilation. `false` is generally the safer choice.
+- `dynamic`: Controls how the compiler handles varying input dimensions.
     When `false`, the compiler will optimize for fixed dimensions. It will expect consistent batch sizes, image resolution, sequence lengths and feature dimensions. It will recompile if any of these change in exchange for better performance.
-  - `mode`: Sets the optimization mode.
-    - `""` (empty): The default, uses the compiler's default settings, which is pretty balanced.
-    - `max-autotune`: Offers a more aggresive optimization strategy, in exchange for longer compilation times. Uses CUDA graphs for caching GPU operations.
-    - `max-autotune-no-cudagraphs`: Similar to `max-autotune`, but without CUDA graphs, useful, if it causes issues.
-  - `options`: Allows you to pass additional options to the compiler. When not empty, it expects a valid JSON.
-  - `disable`: Disables the compilation, ending the fun. Useful, because bypassing the node doesn't work. 🤷‍♂️
-  - `backend`: Specifies the compilation backend to use, the default, `inductor` uses PyTorch's modern optimizing backend, recommended for modern GPUs. FP8 quantization requires Ada or newer GPU architecture.
+- `mode`: Sets the optimization mode.
+  - `""` (empty): The default, uses the compiler's default settings, which is pretty balanced.
+  - `max-autotune`: Offers a more aggresive optimization strategy, in exchange for longer compilation times. Uses CUDA graphs for caching GPU operations.
+  - `max-autotune-no-cudagraphs`: Similar to `max-autotune`, but without CUDA graphs, useful, if it causes issues.
+- `options`: Allows you to pass additional options to the compiler. When not empty, it expects a valid JSON.
+- `disable`: Disables the compilation, ending the fun. Useful, because bypassing the node doesn't work. 🤷‍♂️
+- `backend`: Specifies the compilation backend to use, the default, `inductor` uses PyTorch's modern optimizing backend, recommended for modern GPUs. FP8 quantization requires Ada or newer GPU architecture.
 
 At the time of this writing, the `torch.compile`, `inductor`, `dynamic` combination doesn't work.
 
@@ -159,6 +160,7 @@ WaveSpeed is compatible with multiple models, including FLUX.1-dev, HunyuanVideo
 ---
 
 1. **Clone the Repository**
+
    ```bash
    cd custom_nodes
    git clone https://github.com/chengzeyi/Comfy-WaveSpeed
@@ -170,6 +172,7 @@ WaveSpeed is compatible with multiple models, including FLUX.1-dev, HunyuanVideo
 ## Usage
 
 ### Workflow Integration
+
 1. **Load Your Model**
    - Connect your model loading node (e.g., `Load Checkpoint`) to the `Apply First Block Cache` node.
 2. **Adjust Threshold**

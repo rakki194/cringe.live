@@ -14,9 +14,9 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_01109_.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_01109_.png">
   {{< blurhash
-  src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_01109_.png"
+  src="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_01109_.png"
   blurhash="LLGv9rX95pv#KTbwISn#yGog%Koy"
   width="1536"
   height="1536"
@@ -27,9 +27,9 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_01168_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_01168_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_01168_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_01168_.png"
         blurhash="LHEo7e2T+HOW+JD$NGpIz=bYt+Rj"
         width="1920"
         height="1080"
@@ -37,9 +37,9 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_00965_e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_00965_e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/samplercustom_00965_e.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/samplercustom_00965_e.png"
         blurhash="LnJ[^vDNXLS]yEt2RibEELtRs;aK"
         width="1536"
         height="1536"
@@ -62,11 +62,11 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
 
 ---
 
-[⬇️ LoRAダウンロード (27.8MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/wickerbeast-v1s3000.safetensors)
+[⬇️ LoRAダウンロード (27.8MB)](https://huggingface.co/rakki194/yt/resolve/main/wickerbeast-v1s3000.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/wickerbeast)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/wickerbeast-v1s3000.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/wickerbeast-v1s3000.json)
 
 ## トレーニングモンタージュ
 
@@ -74,7 +74,7 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/wickerbeast/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/wickerbeast/sample_sample00.mp4" type="video/mp4">
         お使いのブラウザは動画タグをサポートしていません。
     </video>
 </div>
@@ -87,9 +87,9 @@ summary: "ウィッカービーストは、ファーリーファンダムにお�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/wickerbeast-v1e500.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/wickerbeast-v1e500.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (50.3MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/wickerbeast-v1e500_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (50.3MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/wickerbeast-v1e500_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

@@ -19,9 +19,9 @@ aliases:
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/maliketh/up_00040_.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/up_00040_.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/maliketh/up_00040_small.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/up_00040_small.png"
     blurhash="LGF5dA0ME1WV_2M|V@jY%fRjM|%2"
     width="1440"
     height="1440"
@@ -43,9 +43,9 @@ What truly sets Maliketh apart is his unique blend of human and beastly traits. 
 
 ---
 
-[⬇️ Chopped LoRA Download (16.5MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/maliketh-v3s2000c.safetensors)
+[⬇️ Chopped LoRA Download (16.5MB)](https://huggingface.co/rakki194/yt/resolve/main/maliketh-v3s2000c.safetensors)
 
-[⬇️ Original LoRA Download (27.8MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/maliketh-v3s2000.safetensors)
+[⬇️ Original LoRA Download (27.8MB)](https://huggingface.co/rakki194/yt/resolve/main/maliketh-v3s2000.safetensors)
 
 <!--
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
@@ -53,7 +53,7 @@ What truly sets Maliketh apart is his unique blend of human and beastly traits. 
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/furry/tree/main/maliketh)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/maliketh-v3s2000.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/maliketh-v3s2000.json)
 
 ## Training Montage
 
@@ -63,7 +63,7 @@ Sponsored by `--sample_every_n_steps=1`, the first video is using `--network_alp
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/maliketh_2_samples.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/maliketh_2_samples.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -72,7 +72,7 @@ and this one is with `--network_alpha=64` and `"conv_alpha=64"`
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/maliketh_2_samples.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/maliketh_2_samples.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -87,9 +87,9 @@ and this one is with `--network_alpha=64` and `"conv_alpha=64"`
 
 ---
 
-[⬇️ LoRA Download (58.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/maliketh-v1e1.safetensors?download=true)
+[⬇️ LoRA Download (58.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/maliketh-v1e1.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (50.2MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/maliketh-v1e1_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (50.2MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/maliketh-v1e1_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -107,9 +107,9 @@ male, anthro, maliketh \(elden ring\), white fur, white hair, head armor, red ca
 anthro male maliketh \(elden ring\) with white fur and white hair wearing head armor, He has a red canine genitalia with a knotty base and fluffy tail, He has claws and monotone fur with a monotone body,
 ```
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000844-04070802e.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000844-04070802e.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000844-04070802e.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000844-04070802e.png"
     blurhash="LGF=~=~qERM{b|IVNIR+DjE29aR-"
     width="1440"
     height="1440"
@@ -117,9 +117,9 @@ anthro male maliketh \(elden ring\) with white fur and white hair wearing head a
     grid="true"
   >}}
 </a>
-<a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000850-04070838.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000850-04070838.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000850-04070838.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000850-04070838.png"
     blurhash="L5IOLgMc~8%$I.a~-o_4E3IT01_2"
     width="1536"
     height="1536"
@@ -127,9 +127,9 @@ anthro male maliketh \(elden ring\) with white fur and white hair wearing head a
     grid="true"
   >}}
 </a>
-<a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000842-04070728e.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000842-04070728e.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/maliketh/00000842-04070728e.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/maliketh/00000842-04070728e.png"
     blurhash="LMKw%;%M9t_34.~qRPD*9FWU-;Rj"
     width="1440"
     height="1440"

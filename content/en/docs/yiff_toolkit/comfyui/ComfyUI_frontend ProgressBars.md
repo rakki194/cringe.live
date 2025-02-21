@@ -9,7 +9,7 @@ aliases:
     - /docs/yiff_toolkit/comfyui/ComfyUI_frontend-ProgressBars
     - /docs/yiff_toolkit/comfyui/ComfyUI_frontend ProgressBars/
     - /docs/yiff_toolkit/comfyui/ComfyUI_frontend ProgressBars
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/cauldron_technology_resized.jpg"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/cauldron_technology_resized.jpg"
 image_alt: "The image depicts an anthropomorphic wolf dressed as a wizard, wearing a flowing purple robe and a matching wide-brimmed, pointed hat. The character has white fur, green eyes, and a focused expression while stirring a large black cauldron filled with a glowing, vibrant purple liquid using a ladle. The scene is set in an alchemy or potion-making environment, featuring wooden shelves in the background stocked with ceramic vases and containers. The surrounding stone walls and soft ambient lighting contribute to the mystical atmosphere, while a faint magical aura emanates from the cauldron, enhancing the arcane theme of the composition."
 blurhash: "LOF;BK0#-eD*^QIrR~Ri9s$ks;ou"
 ---
@@ -26,7 +26,7 @@ This is a patch to `GraphCanvasMenu` and an implementation of `ProgressBars` for
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/progressbars.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/progressbars.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>

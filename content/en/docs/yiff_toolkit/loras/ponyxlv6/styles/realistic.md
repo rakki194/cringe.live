@@ -27,7 +27,7 @@ You can combo this with the [RetouchPhoto LoRA](https://civitai.com/models/34360
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/realistic/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/sample_sample00.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -46,9 +46,9 @@ You can combo this with the [RetouchPhoto LoRA](https://civitai.com/models/34360
 
 ---
 
-[⬇️ LoRA Download (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/realistic-v4e400.safetensors?download=true)
+[⬇️ LoRA Download (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/realistic-v4e400.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (49.8MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/realistic-v4e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (49.8MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/realistic-v4e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -86,9 +86,9 @@ abstract background, simple background
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00001231-04070113.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00001231-04070113.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00001231-04070113.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00001231-04070113.png"
         blurhash="LDG[m1$x9X01%e9Y?ZxB4nxa-;s,"
         width="1024"
         height="1024"
@@ -96,9 +96,9 @@ abstract background, simple background
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000685-04021915.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000685-04021915.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000685-04021915.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000685-04021915.png"
         blurhash="LBD]6o~X59S#yFtmpJkXX;.9^+n,"
         width="1536"
         height="1536"
@@ -110,9 +110,9 @@ abstract background, simple background
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000703-04021946.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000703-04021946.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000703-04021946.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000703-04021946.png"
         blurhash="LKKn*+ofKSWE0=s+Rix]EUtRr:RP"
         width="1536"
         height="1536"
@@ -120,9 +120,9 @@ abstract background, simple background
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000706-04021959.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000706-04021959.png">
       {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000706-04021959.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000706-04021959.png"
           blurhash="LFGIim_3Mwo}Kk?H-:W=~V-;XTWA"
           width="1536"
           height="1536"
@@ -133,9 +133,9 @@ abstract background, simple background
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000754-04030229.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000754-04030229.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/realistic/00000754-04030229.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/00000754-04030229.png"
         blurhash="L15ONXVuBgRk.6tQM|oy8|RkMzoy"
         width="1536"
         height="1536"

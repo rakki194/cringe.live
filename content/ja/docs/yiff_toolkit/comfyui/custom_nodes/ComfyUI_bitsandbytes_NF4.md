@@ -23,11 +23,11 @@ git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
 
 モデルを読み込むには`CheckpointLoaderNF4`ノードを使用します。
 
-![CheckpointLoaderNF4ノード](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/CheckpointLoaderNF4.png)
+![CheckpointLoaderNF4ノード](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/CheckpointLoaderNF4.png)
 
 以下はワークフローの例です：
 
-![NF4ワークフローの例](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/nf4_workflow.png)
+![NF4ワークフローの例](https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/nf4_workflow.png)
 
 ---
 

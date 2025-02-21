@@ -25,11 +25,11 @@ It's a symphony of the body's natural processes, a reminder of our shared roots.
 
 ---
 
-[⬇️ LoRA Download (30.6 MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.safetensors)
+[⬇️ LoRA Download (30.6 MB)](https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/fart_fetish)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.json)
 
 ## Prompting Guide
 
@@ -43,9 +43,9 @@ If you get a nice composition, but the text in the cloud is ruining it, try rein
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png"
     blurhash="LDIOFIRiWAoJ?^RiR*RO^*M|oeIV"
     width="3088"
     height="2194"
@@ -58,7 +58,7 @@ If you get a nice composition, but the text in the cloud is ruining it, try rein
   <div class="image-grid-container">
     <a href="">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00578_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00578_.png"
         blurhash="LAIEqhs.EJ9H?wMw4:M_={9ZM{%M"
         width="2252"
         height="3216"
@@ -68,7 +68,7 @@ If you get a nice composition, but the text in the cloud is ruining it, try rein
     </a>
     <a href="">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00586_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00586_.png"
         blurhash="LGKc:%4;YNNaK-E2.7WUBqw_?aoc"
         width="2252"
         height="3216"

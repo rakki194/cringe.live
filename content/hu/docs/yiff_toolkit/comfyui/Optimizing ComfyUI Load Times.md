@@ -4,7 +4,7 @@ bookFlatSection: false
 bookToC: false
 title: "ComfyUI Betöltési Idők Optimalizálása"
 summary: "A dokumentum lépéseket tartalmaz a ComfyUI betöltési idejének optimalizálásához a szerver szkriptben történő tömörítés engedélyezésével és a fájlok gzip és brotli tömörítésével."
-image: "https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/comfyui/make_it_fast.png"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/make_it_fast.png"
 image_alt: "A kép egy hosszú szőke hajú, fennec fülű anime lányt ábrázol, aki egy havas tájon fut keresztül. A jelenet nappal játszódik, az ég sötétkékből fehérbe megy át. A karakter mozgás közben van megörökítve, egyik lába a földet érinti, a másik mögötte van felemelve, mozgást sugallva. Fehér csíkok jelzik a sebességet vagy az elsuhanó szelet. Az előtérben havas foltok láthatók az egyenetlen talajon, a háttérben tűlevelű fák sziluettjei rajzolódnak ki az égen."
 blurhash: "LVJ[9VRkRkaeOFofoeay02oej?of"
 aliases:

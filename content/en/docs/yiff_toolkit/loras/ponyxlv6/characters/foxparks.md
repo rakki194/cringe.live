@@ -25,9 +25,9 @@ Foxparks is from the game Palworld. It resembles a red fox, with its long ears m
 
 ---
 
-[⬇️ LoRA Download (58.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/foxparks-v2e134.safetensors?download=true)
+[⬇️ LoRA Download (58.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/foxparks-v2e134.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (50.7MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/foxparks-v2e134_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (50.7MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/foxparks-v2e134_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

@@ -4,7 +4,7 @@ bookFlatSection: false
 bookToC: false
 title: "night_in_the_woods"
 summary: "Night in the Woods は、生き生きとした手描きのアニメーションスタイルで知られる高く評価された冒険ゲームです。擬人化されたキャラクターと豊かで雰囲気のある世界が特徴的に融合されています。表現力豊かで感情的なキャラクターと詳細な没入型の環境で特徴付けられるゲームのアートスタイルは、プレイヤーをゲームの世界に引き込み、強い感情的なつながりを呼び起こす能力が称賛されています。"
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
 imageAlt: "この魅力的なアニメーションシーンでは、鮮やかな紫色の魔女または魔法使いの帽子と同じ色のマントを着た白いオオカミの擬人化キャラクターが、図書館または書斎のような場所に立っています。オオカミは鮮やかな緑色の目を持ち、青い宝石のペンダントを首に掛けています。木製のカウンターまたは机の後ろに立つ姿は、自信と好奇心が混ざった表情を見せています。オオカミの隣には、黄色いダイヤモンド模様が施された紺色の衣装を着たカワウソの擬人化キャラクターがいます。カワウソは明るい青い目と友好的で熱心な表情を持っています。周囲の環境は様々な色の本が並ぶ木製の本棚で満たされており、背景のアーチ型の窓からはターコイズ色がかった空が見えます。魔法的な雰囲気は、棚の上にある青く光る魔法の要素または本によって強調されています。"
 blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
 ---
@@ -19,9 +19,9 @@ blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
     blurhash="LJEouvr|q@NCO@W@Zhko00R$ofx^"
     width="1608"
     height="1248"
@@ -32,9 +32,9 @@ blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png"
         blurhash="LHDurZM{Hqxa^boz0is8I?V@Nea~"
         width="1608"
         height="1248"
@@ -44,9 +44,9 @@ blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
     </a>
   </div>
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png"
         blurhash="LNEK}e0*S#-UNdS2$zEO4==]V[Sd"
         width="1613"
         height="1254"
@@ -69,11 +69,11 @@ blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
 
 ---
 
-[⬇️ LoRAのダウンロード (44.4MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/night_in_the_woods_sd35-v4s6000.safetensors)
+[⬇️ LoRAのダウンロード (44.4MB)](https://huggingface.co/rakki194/yt/resolve/main/night_in_the_woods_sd35-v4s6000.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/night_in_the_woods)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/night_in_the_woods_sd35-v4s6000.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/night_in_the_woods_sd35-v4s6000.json)
 
 ---
 

@@ -25,11 +25,11 @@ The art style of Hyper Light Drifter is a vibrant, pixelated masterpiece that ev
 
 ---
 
-[⬇️ LoRA Download (241 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/hld-v1e400.safetensors)
+[⬇️ LoRA Download (241 MB)](https://huggingface.co/rakki194/yt/resolve/main/pony/hld/hld-v1e400.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/hld)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/hld-v1e400.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/pony/hld/hld-v1e400.json)
 
 ## Prompting Guide
 
@@ -44,7 +44,7 @@ The score tags might or might not help you!
 ---
 
 {{< blurhash
-  src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/hld_workflow.png"
+  src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/hld_workflow.png"
   blurhash="L5Q0XK?cxsNZxb9Gx]tP_MIAxbs:"
   width="5500"
   height="1574"
@@ -58,9 +58,9 @@ The score tags might or might not help you!
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/VKY1Z4WQ4ZM00AYEE0QXB05A70.jpg">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/VKY1Z4WQ4ZM00AYEE0QXB05A70.jpg">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/VKY1Z4WQ4ZM00AYEE0QXB05A70.jpg"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/VKY1Z4WQ4ZM00AYEE0QXB05A70.jpg"
       blurhash="LBE2q,%#M[?b^m4.4TwcE1RjR%V?"
       width="832"
       height="1216"
@@ -68,9 +68,9 @@ The score tags might or might not help you!
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/WEXJ02QQDN0Z0SK30T7R11EB40.jpg">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/WEXJ02QQDN0Z0SK30T7R11EB40.jpg">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/WEXJ02QQDN0Z0SK30T7R11EB40.jpg"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/WEXJ02QQDN0Z0SK30T7R11EB40.jpg"
       blurhash="LNEfQxeRMwMe*JM{M^MeBfnUo2sp"
       width="832"
       height="1216"
@@ -83,9 +83,9 @@ The score tags might or might not help you!
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01643_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01643_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01643_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01643_.png"
       blurhash="LNGQ|]j[8zsXq,oMO:jb5NayXMbH"
       width="1536"
       height="1536"
@@ -93,9 +93,9 @@ The score tags might or might not help you!
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01735_the_final_cum.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01735_the_final_cum.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01735_the_final_cum.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01735_the_final_cum.png"
       blurhash="LIHTnK}^}v5hnmIU9F%g5OIUE0%M"
       width="1536"
       height="1536"
@@ -108,9 +108,9 @@ The score tags might or might not help you!
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01793_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01793_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01793_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01793_.png"
       blurhash="LIEMh8Xl8yVFUZWBj;ogngozXMR6"
       width="1536"
       height="1536"
@@ -118,9 +118,9 @@ The score tags might or might not help you!
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01843_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01843_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01843_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01843_.png"
       blurhash="LME1wLoe-qoeI=j[EMay4mWBE1ay"
       width="1536"
       height="1536"
@@ -133,9 +133,9 @@ The score tags might or might not help you!
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01846_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01846_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/hld/samplercustom_01846_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/hld/samplercustom_01846_.png"
       blurhash="LPF=F2_N,]9sLJpbE0m-yCaeMdIA"
       width="2704"
       height="896"

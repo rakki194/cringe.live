@@ -25,9 +25,9 @@ Furry stickers are vibrant and playful adhesive illustrations that feature anthr
 
 ---
 
-[⬇️ LoRA Download (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/furry_sticker-v1e250.safetensors?download=true)
+[⬇️ LoRA Download (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/furry_sticker-v1e250.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (49.2MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/furry_sticker-v1e250_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (49.2MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/furry_sticker-v1e250_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -61,9 +61,9 @@ sticker, abstract background, detailed background, amazing_background, scenery p
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/it-wasnt-me.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/it-wasnt-me.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/it-wasnt-me-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/it-wasnt-me-512.png"
         blurhash="LFIhHi.70e-p%#ogWAt6-;xt-;f*"
         width="512"
         height="512"
@@ -71,9 +71,9 @@ sticker, abstract background, detailed background, amazing_background, scenery p
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/kade-rice.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/kade-rice.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/kade-rice-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/kade-rice-512.png"
         blurhash="LIJ@wq%QP2bUEMaJ-O9YwFRQT2%1"
         width="512"
         height="512"
@@ -85,9 +85,9 @@ sticker, abstract background, detailed background, amazing_background, scenery p
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/kade-this-point-up-sticker-your-stupid.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/kade-this-point-up-sticker-your-stupid.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/kade-this-point-up-sticker-your-stupid-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/kade-this-point-up-sticker-your-stupid-512.png"
         blurhash="LIK-Xz4U0LkoM{t6_2IV%gM{xu-;"
         width="512"
         height="512"
@@ -95,9 +95,9 @@ sticker, abstract background, detailed background, amazing_background, scenery p
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/tibetan-unimpressede.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/tibetan-unimpressede.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/furry_sticker/tibetan-unimpressede-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/furry_sticker/tibetan-unimpressede-512.png"
         blurhash="LXOWTr.8.T?b%$s,V?My?vM{Vsbb"
         width="512"
         height="512"

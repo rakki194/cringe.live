@@ -20,9 +20,9 @@ summary: "チベットスナギツネは、四角い頭と密な毛皮が特徴�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/tibetan-v2e500.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/tibetan-v2e500.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (45.7MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/tibetan-v2e500_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (45.7MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/tibetan-v2e500_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

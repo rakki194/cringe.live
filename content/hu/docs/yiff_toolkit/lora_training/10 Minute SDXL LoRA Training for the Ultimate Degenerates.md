@@ -37,7 +37,7 @@ aliases:
 
 <div class="video-container">
   <video autoplay loop muted playsinline>
-    <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
+    <source src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
     A böngésződ nem támogatja a videó lejátszását.
   </video>
 </div>
@@ -186,7 +186,7 @@ Ahhoz, hogy ellenőrizd, melyik blokk milyen információt tartalmaz, nagyon aj�
 <div style="text-align: center;">
 
 {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/lora_loader.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/lora_loader.png"
     blurhash="L3O|b2xuWBWB~qof4nWB%MofIUWU"
     width="1045"
     height="805"

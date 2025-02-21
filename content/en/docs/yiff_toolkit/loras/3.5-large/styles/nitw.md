@@ -4,7 +4,7 @@ bookFlatSection: false
 bookToC: false
 title: "night_in_the_woods"
 summary: "Night in the Woods is a critically acclaimed adventure game known for its vibrant, hand-drawn animation style, which features a unique blend of anthropomorphic characters and a rich, atmospheric world. The game's art style, characterized by its expressive, emotive characters and detailed, immersive environments, has been praised for its ability to draw players into the game's world and evoke a strong emotional connection."
-image: "https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
+image: "https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
 imageAlt: "In this charming animated scene, an anthropomorphic white wolf wearing a striking purple witch or wizard hat and matching cape stands in what appears to be a library or study. The wolf has vibrant green eyes and wears a pendant with a blue gem around their neck. Their expression suggests a mix of confidence and curiosity as they stand behind what looks like a wooden counter or desk. Beside the wolf is an anthropomorphic otter character wearing a navy blue garment adorned with yellow diamond shapes. The otter has bright blue eyes and a friendly, eager expression. The setting around them is filled with wooden bookshelves stocked with numerous books in various colors, and through an arched window in the background, there appears to be a turquoise-tinted sky. A magical atmosphere is enhanced by what seems to be a glowing blue magical element or book on one of the shelves."
 blurhash: "LJEouvr|q@NCO@W@Zhko00R$ofx^"
 aliases:
@@ -22,9 +22,9 @@ aliases:
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00074_.png"
     blurhash="LJEouvr|q@NCO@W@Zhko00R$ofx^"
     width="1608"
     height="1248"
@@ -35,9 +35,9 @@ aliases:
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_kpicy_00002_.png"
         blurhash="LHDurZM{Hqxa^boz0is8I?V@Nea~"
         width="1608"
         height="1248"
@@ -47,9 +47,9 @@ aliases:
     </a>
   </div>
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/nitw/ComfyUI_temp_uspdn_00037_.png"
         blurhash="LNEK}e0*S#-UNdS2$zEO4==]V[Sd"
         width="1613"
         height="1254"
@@ -72,11 +72,11 @@ The art style of “Night in the Woods” is characterized by its simplicity and
 
 ---
 
-[⬇️ LoRA Download (44.4MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/night_in_the_woods_sd35-v4s6000.safetensors)
+[⬇️ LoRA Download (44.4MB)](https://huggingface.co/rakki194/yt/resolve/main/night_in_the_woods_sd35-v4s6000.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/night_in_the_woods)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/night_in_the_woods_sd35-v4s6000.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/night_in_the_woods_sd35-v4s6000.json)
 
 ---
 

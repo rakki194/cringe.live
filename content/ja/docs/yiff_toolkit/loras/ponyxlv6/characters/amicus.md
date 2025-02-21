@@ -14,9 +14,9 @@ summary: "アミカスは、ビジュアルノベル「Adastra」の主要キャ
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png">
     {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png"
     blurhash="LsJIIS%fSwV@.Tb0kDaepIjEs;f*"
     width="1528"
     height="1528"
@@ -35,11 +35,11 @@ summary: "アミカスは、ビジュアルノベル「Adastra」の主要キャ
 
 ---
 
-[⬇️ LoRAダウンロード (27.8MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/amicus-v1s3000.safetensors)
+[⬇️ LoRAダウンロード (27.8MB)](https://huggingface.co/rakki194/yt/resolve/main/amicus-v1s3000.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/amicus)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/amicus-v1s3000.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/amicus-v1s3000.json)
 
 ## トレーニングモンタージュ
 
@@ -47,7 +47,7 @@ summary: "アミカスは、ビジュアルノベル「Adastra」の主要キャ
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/sample_sample00.mp4" type="video/mp4">
         お使いのブラウザは動画タグをサポートしていません。
     </video>
 </div>
@@ -60,9 +60,9 @@ summary: "アミカスは、ビジュアルノベル「Adastra」の主要キャ
 
 ---
 
-[⬇️ LoRAダウンロード (149MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/amicus-v1e200.safetensors?download=true)
+[⬇️ LoRAダウンロード (149MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/amicus-v1e200.safetensors?download=true)
 
-[⬇️ 軽量版LoRAダウンロード (38.9MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/amicus-v1e200_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 軽量版LoRAダウンロード (38.9MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/amicus-v1e200_frockpt1_th-3.55.safetensors?download=true)
 
 [📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit/raw/main/ponyxl_loras/amicus-v1e200.json)
 

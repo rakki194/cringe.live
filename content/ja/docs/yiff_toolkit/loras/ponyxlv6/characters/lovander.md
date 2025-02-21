@@ -22,9 +22,9 @@ Lovanderは、Palworldに登場する魅力的なサラマンダーです。主�
 
 ---
 
-[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/lovander-v3e10.safetensors?download=true)
+[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/lovander-v3e10.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (48MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/lovander-v3e10_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (48MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/lovander-v3e10_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

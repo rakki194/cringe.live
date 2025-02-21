@@ -28,7 +28,7 @@ ComfyUIを起動するコマンドライン引数の`main.py`の後に`--front-e
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/node_library_search_drag.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/node_library_search_drag.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>
@@ -37,7 +37,7 @@ ComfyUIを起動するコマンドライン引数の`main.py`の後に`--front-e
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/link_release_node.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/link_release_node.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>

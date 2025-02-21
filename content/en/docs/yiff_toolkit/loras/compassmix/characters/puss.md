@@ -27,9 +27,9 @@ Puss in Boots was born and raised with a moral compass, strong sense of justice 
 
 ---
 
-[⬇️ LoRA Download (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss-v1e400.safetensors?download=true)
+[⬇️ LoRA Download (229MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss-v1e400.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (46MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (46MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/puss-compass)
 
@@ -56,7 +56,7 @@ puss, cloak, hat, hat feather, boots,
 
 <div style="display: flex; justify-content: center;">
 
-[![An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)
+[![An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)
 
 </div>
 

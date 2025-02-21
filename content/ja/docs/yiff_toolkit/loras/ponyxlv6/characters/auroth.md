@@ -22,9 +22,9 @@ Auroth（オーロス）は、Dota 2のゲームに登場するウィンター�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/auroth-v1e250.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/auroth-v1e250.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (47.7MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/auroth-v1e250_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (47.7MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/auroth-v1e250_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

@@ -24,9 +24,9 @@ summary: "宇宙は、ハッブル宇宙望遠鏡とジェームズ・ウェッ�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/space-v1e500.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/space-v1e500.safetensors?download=true)
 
-[⬇️ 縮小版LoRAダウンロード (33.8MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/space-v1e500_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 縮小版LoRAダウンロード (33.8MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/space-v1e500_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -71,9 +71,9 @@ blurry, wtf, old art, where is your god now, abstract background, simple backgro
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000890-04092251.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000890-04092251.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000890-04092251-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000890-04092251-512.png"
         blurhash="L8FFT*VEE1IVIURO9ukU~ps+E2IU"
         width="512"
         height="288"
@@ -81,9 +81,9 @@ blurry, wtf, old art, where is your god now, abstract background, simple backgro
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000893-04092315.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000893-04092315.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000893-04092315-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000893-04092315-512.png"
         blurhash="LIDw8GMxxbXSsWD4W?RPU_tRlTr="
         width="512"
         height="288"
@@ -96,9 +96,9 @@ blurry, wtf, old art, where is your god now, abstract background, simple backgro
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000895-04092334.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000895-04092334.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000895-04092334-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000895-04092334-512.png"
         blurhash="L7CsXG%1xo%2nMr;%2xZ4,n#^*E1"
         width="512"
         height="512"
@@ -106,9 +106,9 @@ blurry, wtf, old art, where is your god now, abstract background, simple backgro
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000953-04111037.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000953-04111037.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000953-04111037-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000953-04111037-512.png"
         blurhash="L76*axXB9ts*oNMvt7of4,ab?HRj"
         width="512"
         height="512"
@@ -121,9 +121,9 @@ blurry, wtf, old art, where is your god now, abstract background, simple backgro
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000955-04111040.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000955-04111040.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/space/00000955-04111040-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/space/00000955-04111040-512.png"
         blurhash="L984W0wNMuX9RhNEo$of9WX7tmV="
         width="512"
         height="512"

@@ -27,9 +27,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
 
 ---
 
-[⬇️ Chopped LoKR Download (10.2MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/by_chunie-v3s3000c.safetensors)
+[⬇️ Chopped LoKR Download (10.2MB)](https://huggingface.co/rakki194/yt/resolve/main/by_chunie-v3s3000c.safetensors)
 
-[⬇️ Original LoKR Download (12.3MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/by_chunie-v3s3000.safetensors)
+[⬇️ Original LoKR Download (12.3MB)](https://huggingface.co/rakki194/yt/resolve/main/by_chunie-v3s3000.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/chunie)
 
@@ -39,9 +39,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/9S9Z1PJ2HRM38GCS80NS9R8HW0e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/9S9Z1PJ2HRM38GCS80NS9R8HW0e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/9S9Z1PJ2HRM38GCS80NS9R8HW0e_small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/9S9Z1PJ2HRM38GCS80NS9R8HW0e_small.png"
         blurhash="LDF=]q9H0gxulS%08_%z.SofDiNG"
         width="1024"
         height="1024"
@@ -49,9 +49,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/BQXDYPF2T4YB8Z7CQWFTQTSNF0e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/BQXDYPF2T4YB8Z7CQWFTQTSNF0e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/BQXDYPF2T4YB8Z7CQWFTQTSNF0e_small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/BQXDYPF2T4YB8Z7CQWFTQTSNF0e_small.png"
         blurhash="L9E.YJ0dDj^*4=-W-XIb_4iw%5$."
         width="1024"
         height="1024"
@@ -63,9 +63,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/KG4BXSTZF14P330YH3V38MERJ0.jpg">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/KG4BXSTZF14P330YH3V38MERJ0.jpg">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/KG4BXSTZF14P330YH3V38MERJ0_small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/KG4BXSTZF14P330YH3V38MERJ0_small.png"
         blurhash="LCDcaO-,0gt4-=tRTJIVD%V@IBkq"
         width="1024"
         height="1024"
@@ -73,9 +73,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/up_00018_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/up_00018_.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/NA4DW5FFX1HA0QEED4KWFH9VT0.jpg"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/NA4DW5FFX1HA0QEED4KWFH9VT0.jpg"
         blurhash="LAD[^q$T9GD-~oopNW9E0cs+t1R*"
         width="1024"
         height="1024"
@@ -87,9 +87,9 @@ In addition to his technical skills, Chunie's art often conveys a sense of movem
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/P8ZZZ6WF97GDS5KCNTJ2X0XGM0e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/P8ZZZ6WF97GDS5KCNTJ2X0XGM0e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_chunie/P8ZZZ6WF97GDS5KCNTJ2X0XGM0e_small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_chunie/P8ZZZ6WF97GDS5KCNTJ2X0XGM0e_small.png"
         blurhash="LKF=8e^ji^Ri_NX9M{E1t-Ndxaw]"
         width="1024"
         height="1024"

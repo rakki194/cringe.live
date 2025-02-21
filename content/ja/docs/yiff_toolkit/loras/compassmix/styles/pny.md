@@ -22,9 +22,9 @@ CompassMixでPony Diffusionのデフォルトスタイルを再現します
 
 ---
 
-[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny-v1e200.safetensors?download=true)
+[⬇️ LoRAダウンロード (241MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny-v1e200.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (41.5MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny-v1e200_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (41.5MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny-v1e200_frockpt1_th-3.55.safetensors?download=true)
 
 <!--
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
@@ -32,7 +32,7 @@ CompassMixでPony Diffusionのデフォルトスタイルを再現します
 [📐 データセット](https://huggingface.co/datasets/k4d3/furry/tree/main/)
 -->
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny-v1e200.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny-v1e200.json)
 
 ## プロンプトガイド
 
@@ -66,20 +66,20 @@ CompassMixでPony Diffusionのデフォルトスタイルを再現します
 <div style="display: flex; justify-content: space-between;">
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![AIで生成された画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_00_20240714135959_1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_00_20240714135959_1.png)
-[![AIで生成された画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_04_20240714140202_1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_04_20240714140202_1.png)
+[![AIで生成された画像。](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_00_20240714135959_1.png)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_00_20240714135959_1.png)
+[![AIで生成された画像。](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_04_20240714140202_1.png)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_04_20240714140202_1.png)
 
 </div>
   <div style="display: flex; justify-content: space-between; width: 45%;">
 
-[![AIで生成された画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_03_20240714140104_1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_03_20240714140104_1.png)
-[![AIで生成された画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_02_20240714140101_1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_02_20240714140101_1.png)
+[![AIで生成された画像。](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_03_20240714140104_1.png)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_03_20240714140104_1.png)
+[![AIで生成された画像。](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_02_20240714140101_1.png)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_02_20240714140101_1.png)
 
   </div>
 </div>
 <div style="display: flex; justify-content: center;">
 
-[![AIで生成された画像。](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_01_20240714140001_1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/pny-v1e200/pny_000200_01_20240714140001_1.png)
+[![AIで生成された画像。](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_01_20240714140001_1.png)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/pny-v1e200/pny_000200_01_20240714140001_1.png)
 
 </div>
 

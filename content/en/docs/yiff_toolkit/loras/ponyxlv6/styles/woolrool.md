@@ -15,9 +15,9 @@ aliases:
 
 ---
 
-[⬇️ LoRA Download (58MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/woolrool-v1e4.safetensors?download=true)
+[⬇️ LoRA Download (58MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/woolrool-v1e4.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (42.6MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/woolrool-v1e4_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (42.6MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/woolrool-v1e4_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 

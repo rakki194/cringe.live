@@ -22,11 +22,11 @@ summary: "パルワールドのキャティバをハロウィンテーマにア�
 
 ---
 
-[⬇️ LoRAダウンロード (30.2 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/hallowen_cattiva-v5s512.safetensors)
+[⬇️ LoRAダウンロード (30.2 MB)](https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/hallowen_cattiva-v5s512.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/halloween_cattiva)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/hallowen_cattiva-v5s512.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/hallowen_cattiva-v5s512.json)
 
 ## プロンプトガイド
 
@@ -40,9 +40,9 @@ summary: "パルワールドのキャティバをハロウィンテーマにア�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/halloween_cattiva_rtx_off.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/halloween_cattiva_rtx_off.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/halloween_cattiva_rtx_off.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/halloween_cattiva_rtx_off.png"
       blurhash="LLHBPNu40z|D4pM{%2OEX+sl-Tx]"
       width="1920"
       height="1080"
@@ -50,9 +50,9 @@ summary: "パルワールドのキャティバをハロウィンテーマにア�
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/samplercustom_01972_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/samplercustom_01972_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/halloween_cattiva/samplercustom_01972_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/halloween_cattiva/samplercustom_01972_.png"
       blurhash="LdIgS]$~0#W=IVRkxaxaX+oew]oc"
       width="1528"
       height="1528"

@@ -19,9 +19,9 @@ aliases:
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/sfwskunker.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/sfwskunker.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/sfwskunker.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/sfwskunker.png"
     blurhash="LvG[mYNGnMIVk]axsjRjIvobbEkC"
     width="2400"
     height="2400"
@@ -32,9 +32,9 @@ aliases:
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/skunker51.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/skunker51.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/skunker51.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/skunker51.png"
         blurhash="LVLgqK%K.9Ip~nkCD*t2WUf6NHoe"
         width="1440"
         height="1440"
@@ -44,9 +44,9 @@ aliases:
     </a>
   </div>
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/Unnamed.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/Unnamed.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/Unnamed.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/Unnamed.png"
         blurhash="L8PP.X$et89Z~X9Ej[-=oeIUD%t6"
         width="2880"
         height="2880"
@@ -56,9 +56,9 @@ aliases:
     </a>
   </div>
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/skunker325.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/skunker325.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/skunker325.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/skunker325.png"
         blurhash="LWJ@{T-mIT--~mj]D*ad9Ft5NKD+"
         width="1440"
         height="1440"
@@ -68,9 +68,9 @@ aliases:
     </a>
   </div>
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/samplercustom_01329_e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/samplercustom_01329_e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/samplercustom_01329_e.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/samplercustom_01329_e.png"
         blurhash="L59%C;E04:tnxv0}M_xvIT%3I.Io"
         width="1528"
         height="1528"
@@ -93,13 +93,13 @@ Such distinctive characteristics of skunks occupy a unique position in furry cul
 
 ---
 
-[⬇️ Chopped LoRA Download (16.4MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/skunk-v2s2000c.safetensors)
+[⬇️ Chopped LoRA Download (16.4MB)](https://huggingface.co/rakki194/yt/resolve/main/skunk-v2s2000c.safetensors)
 
-[⬇️ LoRA Download (27.7MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/skunk-v2s2000c.safetensors)
+[⬇️ LoRA Download (27.7MB)](https://huggingface.co/rakki194/yt/resolve/main/skunk-v2s2000c.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/skunk)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/skunk-v2s2000.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/skunk-v2s2000.json)
 
 ## Training Montage
 
@@ -112,7 +112,7 @@ score_9, score_8_up, score_7_up, score_6_up, rating_explicit, source_furry, solo
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/sample_sample00.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -124,7 +124,7 @@ score_9, score_8_up, score_7_up, score_6_up, rating_explicit, source_furry, solo
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/skunk/sample_sample01.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/skunk/sample_sample01.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>

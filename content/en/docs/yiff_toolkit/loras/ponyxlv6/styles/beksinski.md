@@ -25,9 +25,9 @@ Zdzisław Beksiński (24 February 1929 – 21 February 2005) was a renowned Poli
 
 ---
 
-[⬇️ LoRA Download (241 MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/by_beksinski-v1e400.safetensors?download=true)
+[⬇️ LoRA Download (241 MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/by_beksinski-v1e400.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (41.3MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/by_beksinski-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (41.3MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/by_beksinski-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ Sample Images with Metadata](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/by_beksinski)
 
@@ -62,9 +62,9 @@ border, black border
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00000019-05290020-upscaled.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00000019-05290020-upscaled.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00000019-05290020-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00000019-05290020-small.png"
         blurhash="LUJtCwMy^NkXY*enIVX9Y6w]E2WY"
         width="1440"
         height="1440"
@@ -72,9 +72,9 @@ border, black border
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00000060-05290121-upscaled.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00000060-05290121-upscaled.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00000060-05290121-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00000060-05290121-small.png"
         blurhash="LIIWm9+u}=-h.b04+ENG?ORF9#S*"
         width="1440"
         height="1440"
@@ -87,9 +87,9 @@ border, black border
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001683-05290028-upscaled.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001683-05290028-upscaled.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001683-05290028-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001683-05290028-small.png"
         blurhash="LGGk%ZNhvd~LK$Mgawx,7LVGFzRl"
         width="1400"
         height="1400"
@@ -97,9 +97,9 @@ border, black border
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001697-05290118-upscaled.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001697-05290118-upscaled.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001697-05290118-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001697-05290118-small.png"
         blurhash="LTI}e6I]y:$LTeE*yVoJ0,%1Mebb"
         width="1400"
         height="1400"
@@ -111,9 +111,9 @@ border, black border
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001705-05290130-upscaled.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001705-05290130-upscaled.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_beksinski/00001705-05290130-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_beksinski/00001705-05290130-small.png"
         blurhash="LPJZufaJ00by?GR:Ius*tcRnN3xr"
         width="1400"
         height="1400"
@@ -128,9 +128,9 @@ border, black border
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot-small.png"
         blurhash="L6J7p|nCfRZt%pInf6D~RJVtj@mn"
         width="1400"
         height="2264"

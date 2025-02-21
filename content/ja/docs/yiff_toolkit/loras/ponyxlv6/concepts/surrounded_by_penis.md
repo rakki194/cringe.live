@@ -22,11 +22,11 @@ summary: "このLoRAは、1人以上のキャラクターが複数の方向か�
 
 ---
 
-[⬇️ LoRAダウンロード (30.2 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/surrounded_by_penis-v10s2048.safetensors)
+[⬇️ LoRAダウンロード (30.2 MB)](https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/surrounded_by_penis-v10s2048.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/surrounded_by_penis)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/surrounded_by_penis-v10s2048.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/surrounded_by_penis-v10s2048.json)
 
 ## プロンプトガイド
 
@@ -40,9 +40,9 @@ summary: "このLoRAは、1人以上のキャラクターが複数の方向か�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/ottercum_dagasi.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/ottercum_dagasi.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/ottercum_dagasi.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/ottercum_dagasi.png"
       blurhash="LHL|GoS+ELa0_3-;#+XS*JEk^*o}"
       width="1536"
       height="1536"
@@ -50,9 +50,9 @@ summary: "このLoRAは、1人以上のキャラクターが複数の方向か�
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/samplercustom_01917_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/samplercustom_01917_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/samplercustom_01917_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/samplercustom_01917_.png"
       blurhash="LaHKeFWV0KR*Iqs.s8bHOYfkRiWB"
       width="1536"
       height="1536"
@@ -65,9 +65,9 @@ summary: "このLoRAは、1人以上のキャラクターが複数の方向か�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/plot_sur.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/plot_sur.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/surrounded_by_penis/plot_sur.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/surrounded_by_penis/plot_sur.png"
       blurhash="LHJj-zE*M{Rp^*9GIoNf~qXTM{R*"
       width="3072"
       height="3152"

@@ -20,7 +20,7 @@ pythongossssによる便利な（そうでもない）カスタムノードと�
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/comfyui/custom_scripts_completion.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/comfyui/custom_scripts_completion.mp4" type="video/mp4">
         お使いのブラウザはビデオタグをサポートしていません。
     </video>
 </div>

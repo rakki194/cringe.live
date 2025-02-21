@@ -38,10 +38,10 @@ summary: "なんてこと！ セックストイ！ 🙀"
 
 ---
 
-[⬇️ LoRAダウンロード (233MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/analbeads-v1e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (233MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/analbeads-v1e400.safetensors?download=true)
 
 <!--
-[⬇️ 圧縮版LoRAダウンロード ({}MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/{}.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード ({}MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/{}.safetensors?download=true)
 -->
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
@@ -66,9 +66,9 @@ summary: "なんてこと！ セックストイ！ 🙀"
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000045-06011658.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000045-06011658.png">
       {{< blurhash
-          src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000045-06011658-small.png"
+          src="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000045-06011658-small.png"
           blurhash="LIG+Eyrt0K-.6Ct9xYV?M{tmIURi"
           width="1400"
           height="1400"
@@ -76,9 +76,9 @@ summary: "なんてこと！ セックストイ！ 🙀"
           grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000057-06011716.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000057-06011716.png">
       {{< blurhash
-          src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000057-06011716-small.png"
+          src="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000057-06011716-small.png"
           blurhash="LOI|:-NGBgO[E;wcouT10=r?-6jc"
           width="1400"
           height="1400"
@@ -90,9 +90,9 @@ summary: "なんてこと！ セックストイ！ 🙀"
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000064-06011732.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000064-06011732.png">
       {{< blurhash
-          src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000064-06011732-small.png"
+          src="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000064-06011732-small.png"
           blurhash="LTK^{HTbE0rCHDNXnj$jA0adnQI="
           width="1400"
           height="1400"
@@ -100,9 +100,9 @@ summary: "なんてこと！ セックストイ！ 🙀"
           grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000073-06011754.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000073-06011754.png">
       {{< blurhash
-          src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000073-06011754-small.png"
+          src="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000073-06011754-small.png"
           blurhash="LQJQvL?F4:IWB@R*ELW?MwaJs:bw"
           width="1400"
           height="1400"
@@ -114,9 +114,9 @@ summary: "なんてこと！ セックストイ！ 🙀"
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000080-06011803.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000080-06011803.png">
       {{< blurhash
-          src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/analbeads/00000080-06011803-small.png"
+          src="https://huggingface.co/rakki194/yt/resolve/main/static/analbeads/00000080-06011803-small.png"
           blurhash="LREflsWC9FwNqCR*R5RREhs.$jWq"
           width="1400"
           height="1400"

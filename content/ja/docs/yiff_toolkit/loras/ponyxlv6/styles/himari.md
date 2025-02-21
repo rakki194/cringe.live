@@ -24,9 +24,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/by_himari-v1e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/by_himari-v1e400.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (48.2MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/by_himari-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (48.2MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/by_himari-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -58,9 +58,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000418-04190818.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000418-04190818.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000418-04190818.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000418-04190818.png"
         blurhash="LIJ%Xu$QSz5QF?M|S}tQ~oM{E2-o"
         width="1024"
         height="1024"
@@ -68,9 +68,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00001078-04190837.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00001078-04190837.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00001078-04190837.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00001078-04190837.png"
         blurhash="LGD,fY_2m,S}~A%L%#NG$i%1IVH?"
         width="1536"
         height="1536"
@@ -82,9 +82,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000005-06011347.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000005-06011347.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000005-06011347-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000005-06011347-small.png"
         blurhash="LMJ7q9^jD$~o$d-Pr;-p9GM{%2My"
         width="1400"
         height="1400"
@@ -92,9 +92,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
         grid="true"
       >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000007-06011350.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000007-06011350.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000007-06011350.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000007-06011350.png"
         blurhash="LSH_MIsk%KxZ_MM}I=Rl~ARkM|Rj"
         width="1536"
         height="1536"
@@ -106,9 +106,9 @@ summary: "[@147Penguinmw](https://twitter.com/147Penguinmw)による4枚の画�
 </div>
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000033-06011636.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000033-06011636.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/by_himari/00000033-06011636-small.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/by_himari/00000033-06011636-small.png"
         blurhash="LPJ%RA}=0gD*$~JAOYt6Y5s.#RoI"
         width="1400"
         height="1400"

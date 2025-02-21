@@ -24,7 +24,7 @@ aliases:
 
 <div class="video-container">
   <video autoplay loop muted playsinline>
-    <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
+    <source src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -173,7 +173,7 @@ In order for you to check which block contains what information I greatly recomm
 <div style="text-align: center;">
 
 {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/lora_loader.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/lora_loader.png"
     blurhash="L3O|b2xuWBWB~qof4nWB%MofIUWU"
     width="1045"
     height="805"

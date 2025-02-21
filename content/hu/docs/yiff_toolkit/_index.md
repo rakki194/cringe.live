@@ -69,13 +69,13 @@ Folytassuk néhány _wickerbeast_ adat letöltésével, de ne zárd be még a te
 
 A [Grabber](https://github.com/Bionus/imgbrd-grabber) megkönnyíti az életed, amikor gyorsan szeretnél adatkészleteket összeállítani képtáblákról.
 
-[![A Grabber képernyőképe.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)
+[![A Grabber képernyőképe.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)
 
 A Letöltés fülön az `Add` gombra kattintva hozzáadhatsz egy `csoportot`, amely letöltésre kerül. A `Tags` mezőbe írhatod be a keresési paramétereket, ahogy az e621.net oldalon tennéd, tehát például a `wickerbeast solo -comic -meme -animated order:score` karakterlánc egyedülálló wickerbeast képeket keres, kihagyva a képregényeket, mémeket és animált bejegyzéseket, pontszám szerinti csökkenő sorrendben. SDXL LoRA-k tanításához általában nem lesz szükséged 50 képnél többre, de állítsd be a solo csoportot `40`-re, és adj hozzá egy új csoportot `-solo` helyett `solo`-val, és állítsd be a `Képek Limitjét` `10`-re, hogy néhány olyan képet is tartalmazzon, amelyeken más karakterek is szerepelnek. Ez segít a modellnek sokkal jobban tanulni!
 
 Az e621 esetében engedélyezned kell a `Separate log files` opciót is, ez automatikusan letölti a metaadatokat a képekkel együtt.
 
-[![Még egy képernyőkép a Grabberről.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)
+[![Még egy képernyőkép a Grabberről.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)
 
 A Pony esetében a Szövegfájl tartalmát így állítottam be: `rating_%rating%, %all:separator=^, %`, más modelleknél lehet, hogy a `rating_%rating%`-et csak `%rating%`-re szeretnéd cserélni. A SeaArt/CompassMix esetében például a `%all:separator=^, %, %rating%`-et használom.
 

@@ -22,9 +22,9 @@ Dagasiは、ファーリーアートコミュニティで高く評価されて�
 
 ---
 
-[⬇️ LoRAダウンロード (234MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/tests/by_dagasi-v2/by_dagasi.safetensors)
+[⬇️ LoRAダウンロード (234MB)](https://huggingface.co/rakki194/yt/resolve/main/tests/by_dagasi-v2/by_dagasi.safetensors)
 
-[⬇️ 軽量版LoRAダウンロード (57.3MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/tests/by_dagasi-v2/by_dagasi_frockpt1_th-3.55.safetensors)
+[⬇️ 軽量版LoRAダウンロード (57.3MB)](https://huggingface.co/rakki194/yt/resolve/main/tests/by_dagasi-v2/by_dagasi_frockpt1_th-3.55.safetensors)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/by_dagasi)
 

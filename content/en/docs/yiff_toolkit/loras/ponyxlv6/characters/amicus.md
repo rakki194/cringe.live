@@ -17,9 +17,9 @@ aliases:
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png">
     {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/samplercustom_01544_i_think_i_did_enough_damage_here.png"
     blurhash="LsJIIS%fSwV@.Tb0kDaepIjEs;f*"
     width="1528"
     height="1528"
@@ -38,11 +38,11 @@ Amicus is a central character in the visual novel Adastra. He is a wolf-like ali
 
 ---
 
-[⬇️ LoRA Download (27.8MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/amicus-v1s3000.safetensors)
+[⬇️ LoRA Download (27.8MB)](https://huggingface.co/rakki194/yt/resolve/main/amicus-v1s3000.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/amicus)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/amicus-v1s3000.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/amicus-v1s3000.json)
 
 ## Training Montage
 
@@ -50,7 +50,7 @@ Amicus is a central character in the visual novel Adastra. He is a wolf-like ali
 
 <div style="text-align: center;">
     <video style="width: 100%;" autoplay loop muted playsinline>
-        <source src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/amicus/sample_sample00.mp4" type="video/mp4">
+        <source src="https://huggingface.co/rakki194/yt/resolve/main/static/amicus/sample_sample00.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -63,9 +63,9 @@ Amicus is a central character in the visual novel Adastra. He is a wolf-like ali
 
 ---
 
-[⬇️ LoRA Download (149MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/amicus-v1e200.safetensors?download=true)
+[⬇️ LoRA Download (149MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/amicus-v1e200.safetensors?download=true)
 
-[⬇️ Shrunk LoRA Download (38.9MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/amicus-v1e200_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ Shrunk LoRA Download (38.9MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/amicus-v1e200_frockpt1_th-3.55.safetensors?download=true)
 
 [📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit/raw/main/ponyxl_loras/amicus-v1e200.json)
 

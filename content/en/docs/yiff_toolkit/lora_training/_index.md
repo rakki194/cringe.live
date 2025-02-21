@@ -782,7 +782,7 @@ python resize_lora.py -o {output_directory} -r fro_ckpt=1,thr=-3.55 model.safete
 
 Just replace `{output_directory}` with your desired output directory and `model.safetensors` with the checkpoint you used to train your LoRA, or the checkpoint you want to use your new LoRA with and `lora.safetensors` with your LoRA that you wish to shrink down.
 
-Feel free to experiment with any of the SVD recipes, which you can read about in the project's README, my recommendation is obviously just a personal bias, but I did try to [test](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), a [lot](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), so others won't feel the need to!
+Feel free to experiment with any of the SVD recipes, which you can read about in the project's README, my recommendation is obviously just a personal bias, but I did try to [test](https://huggingface.co/rakki194/yt/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), a [lot](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), so others won't feel the need to!
 
 ## Steps vs Epochs
 

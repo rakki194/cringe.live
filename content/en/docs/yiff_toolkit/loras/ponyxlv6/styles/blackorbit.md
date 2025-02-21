@@ -25,11 +25,11 @@ Blackorbit's style is best described as 'VRChat'.
 
 ---
 
-[⬇️ LoRA Download (30.5 MB)](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/blackorbit-v2s2048.safetensors)
+[⬇️ LoRA Download (30.5 MB)](https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/blackorbit-v2s2048.safetensors)
 
 [📐 Dataset](https://huggingface.co/datasets/k4d3/blackorbit)
 
-[📊 Metadata](https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/blackorbit-v2s2048.json)
+[📊 Metadata](https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/blackorbit-v2s2048.json)
 
 ## Prompting Guide
 
@@ -43,9 +43,9 @@ Keyword: `blackorbit`, `3d`
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02065_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02065_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02065_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02065_.png"
       blurhash="LMG*55?Esy?Jf|RQE2xZ0fIpWWNF"
       width="1536"
       height="1536"
@@ -53,9 +53,9 @@ Keyword: `blackorbit`, `3d`
       grid="true"
     >}}
     </a>
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02034_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02034_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02034_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02034_.png"
       blurhash="LIHB@%--4,Mz?bRQ4oNKDit6xaR*"
       width="1536"
       height="1536"
@@ -68,9 +68,9 @@ Keyword: `blackorbit`, `3d`
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02081_.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02081_.png">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit7/resolve/main/pony/blackorbit/samplercustom_02081_.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/pony/blackorbit/samplercustom_02081_.png"
       blurhash="LKGHi6bp-L?d%1a$IVoz0fRQIWM{"
       width="1536"
       height="1536"

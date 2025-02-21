@@ -782,7 +782,7 @@ python resize_lora.py -o {output_directory} -r fro_ckpt=1,thr=-3.55 model.safete
 
 Csak cseréld ki az `{output_directory}`-t a kívánt kimeneti könyvtáraddal és a `model.safetensors`-t azzal a checkpointtal, amit a LoRA betanításához használtál, vagy amivel az új LoRA-dat használni szeretnéd, és a `lora.safetensors`-t azzal a LoRA-val, amit le szeretnél zsugorítani.
 
-Nyugodtan kísérletezz bármelyik SVD recepttel, amelyekről a projekt README-jében olvashatsz, az én ajánlásom nyilvánvalóan csak személyes elfogultság, de próbáltam [tesztelni](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), [sokat](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), hogy másoknak ne kelljen!
+Nyugodtan kísérletezz bármelyik SVD recepttel, amelyekről a projekt README-jében olvashatsz, az én ajánlásom nyilvánvalóan csak személyes elfogultság, de próbáltam [tesztelni](https://huggingface.co/rakki194/yt/resolve/main/static/shrunk/by_beksinski-shrink-plot/beksinski-shrunk-plot.png?download=true), [sokat](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/shrunk), hogy másoknak ne kelljen!
 
 ## Lépések vs Epochák
 

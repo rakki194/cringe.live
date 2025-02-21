@@ -22,11 +22,11 @@ summary: "可哀想な雲たちが、ただ浮かんでいるだけでなく、�
 
 ---
 
-[⬇️ LoRAダウンロード (30.6 MB)](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.safetensors)
+[⬇️ LoRAダウンロード (30.6 MB)](https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.safetensors)
 
 [📐 データセット](https://huggingface.co/datasets/k4d3/fart_fetish)
 
-[📊 メタデータ](https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.json)
+[📊 メタデータ](https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fart_fetish-v2s3000.json)
 
 ## プロンプトガイド
 
@@ -40,9 +40,9 @@ summary: "可哀想な雲たちが、ただ浮かんでいるだけでなく、�
 
 ---
 
-<a href="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png">
+<a href="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png">
   {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/fartplot.png"
     blurhash="LDIOFIRiWAoJ?^RiR*RO^*M|oeIV"
     width="3088"
     height="2194"
@@ -55,7 +55,7 @@ summary: "可哀想な雲たちが、ただ浮かんでいるだけでなく、�
   <div class="image-grid-container">
     <a href="">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00578_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00578_.png"
         blurhash="LAIEqhs.EJ9H?wMw4:M_={9ZM{%M"
         width="2252"
         height="3216"
@@ -65,7 +65,7 @@ summary: "可哀想な雲たちが、ただ浮かんでいるだけでなく、�
     </a>
     <a href="">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00586_.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/loras/noob/fart_fetish-v2s3000/crop_00586_.png"
         blurhash="LGKc:%4;YNNaK-E2.7WUBqw_?aoc"
         width="2252"
         height="3216"

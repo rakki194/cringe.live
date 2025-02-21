@@ -57,13 +57,13 @@ Let's continue with downloading some _wickerbeast_ data but don't close the term
 
 [Grabber](https://github.com/Bionus/imgbrd-grabber) makes your life easier when trying to compile datasets quickly from imageboards.
 
-[![A screenshot of Grabber.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber1.png)
+[![A screenshot of Grabber.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber1.png)
 
 Clicking on the `Add` button on the Download tab lets you add a `group` which will get downloaded, `Tags` will be the where you can type in the search parameters like you would on e621.net, so for example the string `wickerbeast solo -comic -meme -animated order:score` will search for solo wickerbeast pictures without including comics, memes, and animated posts in descending order of their scores. For training SDXL LoRAs you usually won't need more than 50 images, but you should set the solo group to `40` and add a new group with `-solo` instead of `solo` and set the `Image Limit` to `10` for it to include some images with other characters in it. This will help the model learn a lot better!
 
 You should also enable `Separate log files` for e621, this will download the metadata automatically alongside the pictures.
 
-[![Another screenshot of Grabber.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/grabber2.png)
+[![Another screenshot of Grabber.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/grabber2.png)
 
 For Pony I've set up the Text file content like so: `rating_%rating%, %all:separator=^, %` for other models you might want to replace `rating_%rating%` with just `%rating%`. For SeaArt/CompassMix I use `%all:separator=^, %, %rating%` for example.
 
@@ -373,7 +373,7 @@ Just don't forget to turn it off every now and then so you can compare the resul
 
 ---
 
-The new kid on the block, based on SeaArt Furry with some GAN magic by Lodestone, this mix tried to improve upon the original model and succeeded! My recommendation for training a LoRA for usage with it is to not treat it as a regular mix. My experiments ([[#1](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/plot1.png)] [[Dataset Reference](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/obra_dataset_reference.png)], [[#2](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/plot2.png)] [[Example Output](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/compassmix_training/ComfyUI_00606_.png)]) show that LoRAs trained directly on Compass produces much better result, add the new [compass_optimizer](https://github.com/lodestone-rock/compass_optimizer) to your training script instead of AdamW while you are there, which will help with generalization and overall training, if you set it up [correctly](https://github.com/ka-de/sd-scripts/tree/lodew/library/optimizers), (I can highly recommend the one with normalization using the default parameters I left in it's `__init__`) and don't forget to {{< i18n-link "/docs/yiff_toolkit/lora_training_guide/#shrinking" "shrink" >}} it down a notch.
+The new kid on the block, based on SeaArt Furry with some GAN magic by Lodestone, this mix tried to improve upon the original model and succeeded! My recommendation for training a LoRA for usage with it is to not treat it as a regular mix. My experiments ([[#1](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/plot1.png)] [[Dataset Reference](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/obra_dataset_reference.png)], [[#2](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/plot2.png)] [[Example Output](https://huggingface.co/rakki194/yt/resolve/main/static/compassmix_training/ComfyUI_00606_.png)]) show that LoRAs trained directly on Compass produces much better result, add the new [compass_optimizer](https://github.com/lodestone-rock/compass_optimizer) to your training script instead of AdamW while you are there, which will help with generalization and overall training, if you set it up [correctly](https://github.com/ka-de/sd-scripts/tree/lodew/library/optimizers), (I can highly recommend the one with normalization using the default parameters I left in it's `__init__`) and don't forget to {{< i18n-link "/docs/yiff_toolkit/lora_training_guide/#shrinking" "shrink" >}} it down a notch.
 
 ### SeaArt Furry
 
@@ -450,7 +450,7 @@ mane
 
 Yep, that's all it takes.
 
-![[An AI generated image.](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/predicted_normal_18_00024_.png)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/tutorial/predicted_normal_18_00024_.png)
+![[An AI generated image.](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/predicted_normal_18_00024_.png)](https://huggingface.co/rakki194/yt/resolve/main/static/tutorial/predicted_normal_18_00024_.png)
 
 > Thanks to OCPik4chu on Discord for the tip!
 

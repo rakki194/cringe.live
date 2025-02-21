@@ -22,9 +22,9 @@ summary: ""
 
 ---
 
-[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras/darkgem-v1e4.safetensors?download=true)
+[⬇️ LoRAダウンロード (58.4MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras/darkgem-v1e4.safetensors?download=true)
 
-[⬇️ 圧縮版LoRAダウンロード (32.6MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/ponyxl_loras_shrunk_2/darkgem-v1e4_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 圧縮版LoRAダウンロード (32.6MB)](https://huggingface.co/rakki194/yt/resolve/main/ponyxl_loras_shrunk_2/darkgem-v1e4_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/{})
 
@@ -48,9 +48,9 @@ summary: ""
 
 <div class="image-grid">
   <div class="image-grid-container">
-    <a href="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/darkgem/00000859-04070924e.png">
+    <a href="https://huggingface.co/rakki194/yt/resolve/main/static/darkgem/00000859-04070924e.png">
       {{< blurhash
-        src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/darkgem/00000859-04070924e-512.png"
+        src="https://huggingface.co/rakki194/yt/resolve/main/static/darkgem/00000859-04070924e-512.png"
         blurhash="LKF6tAMzELaL.ARPRiajy8IBIBxu"
         width="512"
         height="512"

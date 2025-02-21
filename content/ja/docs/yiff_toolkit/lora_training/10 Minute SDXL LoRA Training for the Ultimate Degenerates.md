@@ -18,7 +18,7 @@ summary: "最小限の労力と計算時間で素晴らしいLoRAを生み出す
 
 <div class="video-container">
   <video autoplay loop muted playsinline>
-    <source src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
+    <source src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/blaidd_training.mp4" type="video/mp4">
     お使いのブラウザはビデオタグをサポートしていません。
   </video>
 </div>
@@ -167,7 +167,7 @@ python chop_blocks.py {⚠️縮小済み⚠️_lora_path} 1,0,0,0,0,0,0,0,0,0,0
 <div style="text-align: center;">
 
 {{< blurhash
-    src="https://huggingface.co/k4d3/yiff_toolkit/resolve/main/static/sd-scripts/lora_loader.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/sd-scripts/lora_loader.png"
     blurhash="L3O|b2xuWBWB~qof4nWB%MofIUWU"
     width="1045"
     height="805"

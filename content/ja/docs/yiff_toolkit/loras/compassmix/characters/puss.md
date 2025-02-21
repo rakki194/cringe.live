@@ -24,9 +24,9 @@ summary: "長靴をはいた猫（パス）は、スペインなまりのある�
 
 ---
 
-[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss-v1e400.safetensors?download=true)
+[⬇️ LoRAダウンロード (229MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss-v1e400.safetensors?download=true)
 
-[⬇️ 軽量版LoRAダウンロード (46MB)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss-v1e400_frockpt1_th-3.55.safetensors?download=true)
+[⬇️ 軽量版LoRAダウンロード (46MB)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss-v1e400_frockpt1_th-3.55.safetensors?download=true)
 
 [🖼️ メタデータ付きサンプル画像](https://huggingface.co/k4d3/yiff_toolkit/tree/main/static/puss-compass)
 
@@ -52,7 +52,7 @@ puss, cloak, hat, hat feather, boots,
 
 <div style="display: flex; justify-content: center;">
 
-[![AI生成画像](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)](https://huggingface.co/k4d3/yiff_toolkit/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)
+[![AI生成画像](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)](https://huggingface.co/rakki194/yt/resolve/main/compass_loras/puss-v1e400/puss_000400_01_20240709175442_1.png?download=true)
 
 </div>
 
