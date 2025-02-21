@@ -1,0 +1,59 @@
+baseURL: "http://wolf.dildo:1313/"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
+title: "CRINGE.LIVE"
+theme: "cringe-theme"
+disablePathToLower: true
+enableGitInfo: true
+enableLastMod: true
+
+# Taxonomies
+taxonomies:
+  tags: tags
+
+# Taxonomy settings
+permalinks:
+  tags: /tags/:slug
+
+# Output settings
+outputs:
+  home: ["HTML", "RSS", "JSON", "SITEMAP"]
+  section: ["HTML", "RSS", "JSON"]
+  taxonomy: ["HTML", "RSS", "JSON"]
+  term: ["HTML", "RSS", "JSON"]
+  page: ["HTML", "JSON", "AMP"]
+
+outputFormats:
+  AMP:
+    mediaType: "text/html"
+    path: "amp"
+    baseName: "index"
+    rel: "amphtml"
+    isHTML: true
+    permalinkable: true
+    noUgly: true
+  JSON:
+    mediaType: "application/json"
+    baseName: "index"
+    isPlainText: true
+    notAlternative: true
+
+languages:
+  en:
+    languageCode: "en-US"
+    languageName: "English"
+    contentDir: "content/en"
+    title: "CRINGE.LIVE"
+    weight: 1
+  ja:
+    languageCode: "ja-JP"
+    languageName: "日本語"
+    contentDir: "content/ja"
+    title: "CRINGE.LIVE"
+    weight: 2
+  hu:
+    languageCode: "hu-HU"
+    languageName: "Magyar"
+    contentDir: "content/hu"
+    title: "CRINGE.LIVE"
+    weight: 3 

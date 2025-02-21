@@ -28,9 +28,17 @@ outputs:
   section: ["HTML", "RSS", "JSON"]
   taxonomy: ["HTML", "RSS", "JSON"]
   term: ["HTML", "RSS", "JSON"]
-  page: ["HTML", "JSON"]
+  page: ["HTML", "JSON", "AMP"]
 
 outputFormats:
+  AMP:
+    mediaType: "text/html"
+    path: "amp"
+    baseName: "index"
+    rel: "amphtml"
+    isHTML: true
+    permalinkable: true
+    noUgly: true
   JSON:
     mediaType: "application/json"
     baseName: "index"

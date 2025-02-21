@@ -1,0 +1,13 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" | default "800" -}}
+{{- $height := .Get "height" | default "600" -}}
+{{- $layout := .Get "layout" | default "responsive" -}}
+
+<amp-img
+    src="{{ $src }}"
+    width="{{ $width }}"
+    height="{{ $height }}"
+    layout="{{ $layout }}"
+    alt="{{ $alt }}"
+></amp-img> 

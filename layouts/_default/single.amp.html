@@ -1,0 +1,39 @@
+{{ define "header" }}
+<h1>{{ .Title }}</h1>
+{{ with .Description }}
+<p class="description">{{ . }}</p>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+<article>
+    {{ with .Params.image }}
+    <amp-img
+        src="{{ . }}"
+        width="800"
+        height="400"
+        layout="responsive"
+        alt="{{ $.Params.image_alt }}"
+    ></amp-img>
+    {{ end }}
+    
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    {{ with .Params.tags }}
+    <div class="tags">
+        {{ range . }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
+{{ end }}
+
+{{ define "footer" }}
+<p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
+{{ with .Lastmod }}
+<p>Last updated: {{ .Format "January 2, 2006" }}</p>
+{{ end }}
+{{ end }} 
