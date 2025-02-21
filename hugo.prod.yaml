@@ -1,8 +1,9 @@
-baseURL: "http://wolf.dildo:1313/"
+baseURL: "https://cringe.live/"
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true
 title: "CRINGE.LIVE"
 theme: "cringe-theme"
+googleAnalytics: "G-D69NRX5XH6"
 disablePathToLower: true
 enableGitInfo: true
 enableLastMod: true
@@ -32,13 +33,35 @@ outputFormats:
     isHTML: true
     permalinkable: true
     noUgly: true
-    protocol: "http://"
+    protocol: "https://"
     notAlternative: false
   JSON:
     mediaType: "application/json"
     baseName: "index"
     isPlainText: true
     notAlternative: true
+
+# URL configuration
+uglyURLs: false
+relativeURLs: false
+canonifyURLs: true
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allows raw HTML in markdown
+  highlight:
+    style: "catppuccin-latte"
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
+
+# Logging configuration
+ignoreErrors:
+  - "error-remote-getjson"
+ignoreLogs:
+  - "warning-goldmark-raw-html"
 
 languages:
   en:
@@ -58,35 +81,4 @@ languages:
     languageName: "Magyar"
     contentDir: "content/hu"
     title: "CRINGE.LIVE"
-    weight: 3
-
-# Markup configuration
-markup:
-  goldmark:
-    renderer:
-      unsafe: true  # Allows raw HTML in markdown
-  highlight:
-    style: "catppuccin-latte"
-  tableOfContents:
-    startLevel: 1
-    endLevel: 6
-
-# Logging configuration
-ignoreErrors:
-  - "error-remote-getjson"
-ignoreLogs:
-  - "warning-goldmark-raw-html"
-
-# Server configuration
-server:
-  headers:
-    - for: /**
-      values:
-        Access-Control-Allow-Origin: "*"
-        Access-Control-Allow-Methods: "GET, POST, OPTIONS"
-        Access-Control-Allow-Headers: "*"
-
-# URL configuration
-uglyURLs: false
-relativeURLs: true
-canonifyURLs: true 
+    weight: 3 

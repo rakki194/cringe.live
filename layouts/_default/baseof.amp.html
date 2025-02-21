@@ -57,6 +57,7 @@
             border-radius: 4px;
             padding: 0.2em 0.4em;
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            overflow-wrap: break-word;
         }
         
         pre {
@@ -123,11 +124,14 @@
             width: 100%;
             border-collapse: collapse;
             margin: 1rem 0;
+            overflow-x: auto;
+            display: block;
         }
         
         th, td {
             padding: 0.5rem;
             border: 1px solid #ddd;
+            min-width: 100px;
         }
         
         th {
@@ -156,7 +160,24 @@
             overflow-x: auto;
             margin: 1rem 0;
         }
+
+        /* Figure */
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .book-brand { font-size: 2em; }
+        .book-menu { font-size: 1em; }
+        .book-toc { font-size: 0.9em; }
     </style>
+    {{ block "head" . }}{{ end }}
 </head>
 <body>
     <header>

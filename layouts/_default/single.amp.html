@@ -8,17 +8,25 @@
 {{ define "main" }}
 <article>
     {{ with .Params.image }}
-    <amp-img
-        src="{{ . }}"
-        width="800"
-        height="400"
-        layout="responsive"
-        alt="{{ $.Params.image_alt }}"
-    ></amp-img>
+    <figure>
+        <amp-img
+            src="{{ . }}"
+            width="800"
+            height="400"
+            layout="responsive"
+            alt="{{ $.Params.image_alt }}"
+        ></amp-img>
+        {{ with $.Params.image_alt }}
+        <figcaption>{{ . }}</figcaption>
+        {{ end }}
+    </figure>
     {{ end }}
     
     <div class="content">
-        {{ .Content }}
+        {{ $content := .Content }}
+        {{ $content := replaceRE "<img ([^>]+)>" "<amp-img $1 layout=\"responsive\"></amp-img>" $content }}
+        {{ $content := replaceRE "<iframe ([^>]+)>" "<amp-iframe $1 layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin\">" $content }}
+        {{ $content | safeHTML }}
     </div>
     
     {{ with .Params.tags }}

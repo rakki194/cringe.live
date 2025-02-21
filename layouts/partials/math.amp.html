@@ -1,0 +1,8 @@
+{{ if .Params.math }}
+<amp-mathml
+    layout="container"
+    inline="{{ if .Get "inline" }}true{{ else }}false{{ end }}"
+    formula="{{ .Inner }}"
+>
+</amp-mathml>
+{{ end }} 

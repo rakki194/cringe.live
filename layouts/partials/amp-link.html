@@ -1,0 +1,3 @@
+{{ if .OutputFormats.Get "AMP" }}
+<link rel="amphtml" href="{{ .OutputFormats.Get "AMP" | absURL }}">
+{{ end }} 
