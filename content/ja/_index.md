@@ -6,13 +6,13 @@ bookToC: false
 outputs: [HTML, RSS, JSON]
 ---
 
-<!-- markdownlint-disable MD009 MD025 MD033 -->
+<!-- markdownlint-disable MD009 MD025 MD033 MD034 -->
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
   <div style="flex: 1 1 300px; min-width: 0;">
 
 {{< blurhash
-    src="/images/kade-point-up-not-a-furry-jp.png"
+    src="https://huggingface.co/rakki194/yt/resolve/main/static/kade-point-up-not-a-furry-jp.webp"
     blurhash="LIK-Xz010LkoM|t6_2IV%gM{xu-;"
     width="512"
     height="512"
@@ -65,7 +65,7 @@ outputs: [HTML, RSS, JSON]
 <div style="display: flex; justify-content: center;">
   <a href="{{< i18n-link "/docs/yiff_toolkit" "" true >}}">
     {{< blurhash
-      src="https://huggingface.co/k4d3/yiff_toolkit6/resolve/main/static/realistic/fur_and_loathing_small.png"
+      src="https://huggingface.co/rakki194/yt/resolve/main/static/realistic/fur_and_loathing_small.webp"
       blurhash="LOE.qnE2bbkX_4t6kC-pOtxZWBxu"
       width="1400"
       height="595"
